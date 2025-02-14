@@ -1,0 +1,107 @@
+.Contact-Us {
+  background-image: url(../../../assets/images/common/contact.png);
+  background-size: cover;
+  background-position: top;
+  height: 300px;
+}
+
+.Contact-Us p {
+  font-family: "R3";
+  color: #ffffffc2;
+  font-size: 13px;
+}
+
+.Contact-Us h3 {
+  font-family: "R2";
+  color: rgba(255, 255, 255, 0.918);
+}
+
+.Form-Fields {
+  background-color: rgb(255, 255, 255);
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(219, 219, 219);
+  border-radius: 5px;
+}
+
+.Form-Fields label {
+  font-size: 13px;
+  font-family: "R3";
+}
+
+.field-input {
+  outline: none;
+  height: 37px;
+  border-style: solid;
+  border-radius: 4px;
+  border-width: 1px;
+  border-color: rgb(215, 215, 215);
+  padding-left: 10px;
+  font-family: "R3";
+}
+
+.text-area {
+  outline: none;
+  height: 100px;
+  border-style: solid;
+  border-radius: 4px;
+  border-width: 1px;
+  border-color: rgb(215, 215, 215);
+  padding-left: 10px;
+  font-family: "R3";
+}
+
+.field-input::placeholder {
+  font-family: "R4";
+  color: rgb(159, 159, 159);
+  font-size: 14px;
+}
+
+.text-area::placeholder {
+  font-family: "R4";
+  color: rgb(159, 159, 159);
+  font-size: 14px;
+}
+
+.contact-row {
+  margin-top: -140px;
+}
+
+.contact-description {
+  margin-top: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 170px;
+}
+
+@media (max-width: 767px) {
+  .contact-description {
+    margin-top: 0;
+  }
+}
+
+.contact-description p {
+  font-family: "R4";
+}
+
+.contact-description button {
+  background-color: rgb(1, 84, 56);
+  border-style: none;
+  border-radius: 4px;
+  width: 300px;
+  font-size: 15px;
+  font-family: "R3";
+  color: rgb(255, 255, 255);
+}
+
+.submit-Button {
+  background-color: rgb(12, 140, 167);
+  border-style: none;
+  border-radius: 4px;
+  width: 100%;
+  font-size: 15px;
+  font-family: "R3";
+  color: rgb(255, 255, 255);
+  height: 38px;
+}

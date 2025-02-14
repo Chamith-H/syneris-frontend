@@ -1,0 +1,35 @@
+.Hero {
+  background-color: rgba(12, 141, 167, 0.099);
+}
+
+.Hero-Main-Title {
+  font-family: "R1";
+  color: rgb(0, 0, 0);
+}
+
+.Hero-Sub-Title {
+  font-family: "R4";
+  color: rgb(86, 86, 86);
+}
+
+.Hero-Image {
+  height: 500px;
+}
+
+.Hero-Main-Title span {
+  color: rgb(12, 140, 167);
+}
+
+.Icon-Rounder-header {
+  height: 36px;
+  width: 36px;
+  border-radius: 100%;
+  background-color: rgb(12, 140, 167);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Icon-Rounder-header i {
+  color: rgb(255, 255, 255);
+}

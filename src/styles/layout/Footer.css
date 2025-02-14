@@ -1,0 +1,57 @@
+.Footer {
+  background-color: rgb(255, 255, 255);
+}
+
+.FooterTop {
+  background-color: rgb(247, 247, 247);
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-color: rgb(230, 230, 230);
+}
+
+.Icon-Rounder-footer {
+  height: 32px;
+  width: 32px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(244, 244, 244);
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(157, 157, 157);
+}
+
+.company-name {
+  color: rgb(139, 139, 139);
+  font-family: "R4";
+  font-size: 15px;
+}
+
+.logo-sec img {
+  width: 60%;
+}
+
+.middle-footer {
+  background-color: rgb(230, 230, 230);
+}
+
+.Footer-bottom {
+  background-color: rgb(9, 93, 112);
+  color: rgb(255, 255, 255);
+}
+
+.middle-footer p {
+  font-family: "R4";
+  color: black;
+  font-size: 15px;
+}
+
+.Footer-bottom p {
+  font-family: "R4";
+  font-size: 14px;
+}
+
+.Icon-Rounder-footer i {
+  color: rgb(157, 157, 157);
+}

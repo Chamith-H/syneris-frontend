@@ -1,0 +1,33 @@
+.Appointments {
+  background-image: url(../../../../assets/images/home/Appointments.jpg);
+  background-size: cover;
+}
+
+.background-align-app {
+  background-color: rgba(0, 0, 0, 0.767);
+}
+
+.info-tag-a {
+  font-family: "R3";
+  color: #71def3;
+  font-size: 13px;
+}
+
+.Appointments h3 {
+  font-family: "R2";
+  color: rgba(255, 255, 255, 0.871);
+}
+
+.solution-description-a {
+  font-family: "R4";
+  color: rgb(255, 255, 255);
+}
+
+.Appointments button {
+  border-style: none;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border-radius: 4px;
+  font-family: "R3";
+  font-size: 14px;
+}

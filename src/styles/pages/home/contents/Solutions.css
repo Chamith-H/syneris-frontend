@@ -1,0 +1,53 @@
+.Solutions h3 {
+  font-family: "R2";
+  color: rgb(50, 50, 50);
+}
+
+.info-tag {
+  font-family: "R3";
+  color: rgb(12, 140, 167);
+  font-size: 13px;
+}
+
+.solution-description {
+  font-family: "R4";
+  color: black;
+}
+
+.Solution-Card {
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(235, 235, 235);
+  border-radius: 5px;
+}
+
+.Icon-Rounder {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0c8da722;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #0c8da73e;
+  margin-bottom: 10px;
+}
+
+.Solution-Card h6 {
+  font-family: "R3";
+  color: #000000;
+  font-size: 15px;
+}
+
+.Solution-Card p {
+  font-family: "R4";
+  color: black;
+}
+
+.Solution-Card-Img img {
+  width: 100%;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}

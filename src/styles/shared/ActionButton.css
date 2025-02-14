@@ -1,0 +1,12 @@
+.Action-Button {
+  background-color: rgb(12, 140, 167);
+  border-style: none;
+  font-family: "R3";
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+  border-radius: 3px;
+}
+
+.Action-Button:hover {
+  background-color: rgb(27, 171, 200);
+}
