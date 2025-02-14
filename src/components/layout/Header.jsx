@@ -93,7 +93,7 @@ export const Header = () => {
           </a>
           <a
             className={
-              route === "booking" ? "active-route mt-2" : "deactive-route mt-2"
+              route === "booking" ? "active-route mt-3" : "deactive-route mt-3"
             }
             href="/booking"
           >
@@ -101,7 +101,7 @@ export const Header = () => {
           </a>
           <a
             className={
-              route === "about" ? "active-route mt-2" : "deactive-route mt-2"
+              route === "about" ? "active-route mt-3" : "deactive-route mt-3"
             }
             href="/about"
           >
