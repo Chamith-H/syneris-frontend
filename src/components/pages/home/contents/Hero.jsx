@@ -7,8 +7,20 @@ import hero2ImgSmall from "../../../../assets/images/home/hero2ImgSmall.png";
 
 import hero3Img from "../../../../assets/images/home/hero3Img.png";
 import hero3ImgSmall from "../../../../assets/images/home/hero3ImgSmall.png";
+import { useEffect } from "react";
 
 export const Hero = () => {
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const carouselElement = document.getElementById("carouselExample");
+      if (carouselElement) {
+        const carousel = new window.bootstrap.Carousel(carouselElement);
+        carousel.next();
+      }
+    }, 3000);
+
+    return () => clearInterval(interval); // Cleanup on unmount
+  }, []);
   return (
     <div className="Hero-Section">
       <div id="carouselExample" class="carousel slide">
@@ -190,7 +202,7 @@ export const Hero = () => {
             </div>
           </div>
         </div>
-        <button
+        {/* <button
           class="carousel-control-prev"
           type="button"
           data-bs-target="#carouselExample"
@@ -207,7 +219,7 @@ export const Hero = () => {
         >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
-        </button>
+        </button> */}
       </div>
     </div>
   );
