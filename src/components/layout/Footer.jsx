@@ -33,7 +33,7 @@ export const Footer = () => {
       </div>
 
       <div className="row g-0 pt-4 middle-footer">
-        <div className="col-12 col-sm-6 col-lg-3 d-flex justify-content-center align-items-center logo-sec py-3 mb-2">
+        <div className="col-12 px-5 px-md-0 col-sm-6 col-lg-3 d-flex justify-content-center align-items-center logo-sec py-3 mb-2">
           <img src={footerLogo} alt="" />
         </div>
         <div className="col-12 col-sm-6 col-lg-3 d-flex flex-column align-items-center py-3">

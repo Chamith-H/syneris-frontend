@@ -2,6 +2,14 @@
   background-color: rgba(12, 141, 167, 0.099);
 }
 
+.Hero2 {
+  background-color: rgb(10, 112, 134);
+}
+
+.Hero3 {
+  background-color: rgb(147, 202, 213);
+}
+
 .Hero-Main-Title {
   font-family: "R1";
   color: rgb(0, 0, 0);
@@ -14,12 +22,44 @@
   text-shadow: 1px 1px 1px rgb(231, 244, 246);
 }
 
-.Hero-Image {
-  height: 500px;
+.Hero2-Main-Title {
+  font-family: "R1";
+  color: rgb(27, 209, 246);
+  text-shadow: 1px 1px 1px rgb(10, 112, 134);
+}
+
+.Hero2-Sub-Title {
+  font-family: "R4";
+  color: rgba(255, 255, 255, 0.778);
+  text-shadow: 1px 1px 1px rgb(10, 112, 134);
+}
+
+.Hero2-Main-Title span {
+  color: rgba(255, 255, 255, 0.882);
+}
+
+.Hero3-Main-Title {
+  font-family: "R1";
+  color: rgb(0, 98, 120);
+  text-shadow: 1px 1px 1px rgb(115, 194, 210);
+}
+
+.Hero3-Sub-Title {
+  font-family: "R4";
+  color: #005060;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.7);
+}
+
+.Hero3-Main-Title span {
+  color: rgb(210, 247, 255);
 }
 
 .Hero-Main-Title span {
   color: rgb(12, 140, 167);
+}
+
+.Hero-Image {
+  height: 500px;
 }
 
 .Icon-Rounder-header {
