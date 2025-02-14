@@ -1,6 +1,13 @@
 import "../../../../styles/pages/home/contents/Appointments.css";
+import { useNavigate } from "react-router-dom";
 
 export const Appointments = () => {
+  const navigate = useNavigate();
+
+  const clickToBook = () => {
+    navigate("/booking");
+  };
+
   return (
     <div className="Appointments">
       <div className="px-4 py-4 py-md-5 px-md-5 background-align-app">
@@ -23,7 +30,9 @@ export const Appointments = () => {
             customer experience, and achieve sustainable growth.
           </p>
 
-          <button className="px-4 py-2">Book Now</button>
+          <button onClick={() => clickToBook()} className="px-4 py-2">
+            Book Now
+          </button>
         </div>
       </div>
     </div>

@@ -42,7 +42,7 @@ export const HealthCare = () => {
                     </p>
                   </div>
 
-                  <a href="/">
+                  <a href="/booking">
                     See More <span>&#8594;</span>
                   </a>
                 </div>
