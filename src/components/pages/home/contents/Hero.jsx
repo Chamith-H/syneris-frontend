@@ -1,5 +1,5 @@
 import "../../../../styles/pages/home/contents/Hero.css";
-import heroImg from "../../../../assets/images/home/heroImg.png";
+import heroImg from "../../../../assets/images/home/heroImg.jpg";
 import heroImgSmall from "../../../../assets/images/home/heroImgSmall.png";
 
 import hero2Img from "../../../../assets/images/home/hero2Img.png";
@@ -7,6 +7,7 @@ import hero2ImgSmall from "../../../../assets/images/home/hero2ImgSmall.png";
 
 import hero3Img from "../../../../assets/images/home/hero3Img.png";
 import hero3ImgSmall from "../../../../assets/images/home/hero3ImgSmall.png";
+
 import { useEffect } from "react";
 
 export const Hero = () => {
@@ -86,23 +87,8 @@ export const Hero = () => {
           </div>
           <div class="carousel-item">
             <div className="Hero">
-              <div className="row g-0 position-relative">
-                <div className="col-6"></div>
-
-                <div className="col-6 d-flex justify-content-end">
-                  <img
-                    className="Hero-Image d-none d-md-block"
-                    src={heroImg}
-                    alt=""
-                  />
-                  <img
-                    className="Hero-Image d-md-none"
-                    src={heroImgSmall}
-                    alt=""
-                  />
-                </div>
-
-                <div className="col-12 Hero-Content-Main">
+              <div className="row g-0">
+                <div className="col-12 Hero-Content-Main-y">
                   <div className="row g-0 h-100">
                     <div className="col-12 col-md-6 h-100">
                       <div className="px-4 px-md-5 py-5 d-flex flex-column justify-content-between h-100">
@@ -145,23 +131,8 @@ export const Hero = () => {
           </div>
           <div class="carousel-item">
             <div className="Hero3">
-              <div className="row g-0 position-relative">
-                <div className="col-6"></div>
-
-                <div className="col-6 d-flex justify-content-end">
-                  <img
-                    className="Hero-Image d-none d-md-block"
-                    src={hero3Img}
-                    alt=""
-                  />
-                  <img
-                    className="Hero-Image d-md-none"
-                    src={hero3ImgSmall}
-                    alt=""
-                  />
-                </div>
-
-                <div className="col-12 Hero-Content-Main">
+              <div className="row">
+                <div className="col-12 Hero-Content-Main-x">
                   <div className="row g-0 h-100">
                     <div className="col-12 col-md-6 h-100">
                       <div className="px-4 px-md-5 py-5 d-flex flex-column justify-content-between h-100">
@@ -202,24 +173,6 @@ export const Hero = () => {
             </div>
           </div>
         </div>
-        {/* <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExample"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExample"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button> */}
       </div>
     </div>
   );

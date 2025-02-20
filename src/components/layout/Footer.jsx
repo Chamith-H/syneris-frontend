@@ -46,8 +46,9 @@ export const Footer = () => {
           />
 
           <p className="text-center mt-2">
-            No:71, Kohilawatta , Wellampitiya, <br />
-            Sri Lanka.
+            Orion Tower, 736, <br />
+            Dr. Danister De Silva Mawatha,
+            <br /> Colombo 00900, Sri Lanka
           </p>
         </div>
         <div className="col-12 col-sm-6 col-lg-3 d-flex flex-column align-items-center py-3">

@@ -1,0 +1,27 @@
+.SapBOne {
+  background-color: rgb(240, 240, 240);
+}
+
+.sap-description {
+  font-family: "R4";
+  color: black;
+}
+
+.b1Logo {
+  width: 150px;
+}
+
+.b1Img {
+  width: 200px;
+}
+
+.SapBOne a {
+  text-decoration: none;
+  font-family: "R3";
+  font-size: 15px;
+  color: rgba(12, 141, 167, 0.784);
+}
+
+.SapBOne a:hover {
+  color: rgb(10, 112, 134);
+}

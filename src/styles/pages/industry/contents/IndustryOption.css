@@ -1,0 +1,19 @@
+.ind-info-des {
+  font-size: 15px;
+  font-family: "R4";
+}
+
+.Ind-Img img {
+  width: 40px;
+}
+
+.ind-head {
+  font-family: "R3";
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+}
+
+.info-ind-main {
+  font-family: "R2";
+  color: rgb(52, 52, 52);
+}

@@ -1,0 +1,38 @@
+.industry-des {
+  font-family: "R4";
+  color: #000;
+}
+
+.industry-card {
+  width: 100%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(235, 235, 235);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.industryGif {
+  width: 130px;
+}
+
+.industry-card p {
+  font-family: "R4";
+  font-size: 14px;
+  margin-bottom: 0;
+  color: rgb(87, 87, 87);
+}
+
+.Industries a {
+  text-decoration: none;
+  font-family: "R3";
+  font-size: 15px;
+  color: rgba(12, 141, 167, 0.784);
+}
+
+.Industries a:hover {
+  color: rgb(10, 112, 134);
+}

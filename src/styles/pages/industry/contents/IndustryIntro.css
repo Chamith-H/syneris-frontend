@@ -1,0 +1,19 @@
+.IndustryIntro {
+  background-image: url(../../../../assets/images/industry/IndustryTop.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+
+.Industry-Background {
+  background-color: rgba(0, 0, 0, 0.641);
+}
+
+.Industry-Background p {
+  font-family: "R4";
+  color: rgb(255, 255, 255);
+}
+
+.Industry-Background h5 {
+  font-family: "R3";
+  color: rgb(142, 224, 240);
+}

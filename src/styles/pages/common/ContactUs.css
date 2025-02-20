@@ -9,11 +9,13 @@
   font-family: "R3";
   color: #ffffffc2;
   font-size: 13px;
+  text-shadow: 1px 1px 1px rgb(12, 140, 167);
 }
 
 .Contact-Us h3 {
   font-family: "R2";
   color: rgba(255, 255, 255, 0.918);
+  text-shadow: 1px 1px 1px rgb(12, 140, 167);
 }
 
 .Form-Fields {

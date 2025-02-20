@@ -52,15 +52,32 @@ export const Header = () => {
           </a>
           <a
             className={
+              route === "sap-business-one"
+                ? "active-route ms-4"
+                : "deactive-route ms-4"
+            }
+            href="/sap-business-one"
+          >
+            SAP B-One
+          </a>
+          <a
+            className={
+              route === "industries"
+                ? "active-route ms-4"
+                : "deactive-route ms-4"
+            }
+            href="/industries"
+          >
+            Industries
+          </a>
+          <a
+            className={
               route === "about" ? "active-route ms-4" : "deactive-route ms-4"
             }
             href="/about"
           >
             About Us
           </a>
-          <div className="ms-4">
-            <ActionButton name="Connect" />
-          </div>
         </div>
       </div>
 
@@ -98,6 +115,28 @@ export const Header = () => {
             href="/booking"
           >
             Booking
+          </a>
+
+          <a
+            className={
+              route === "sap-business-one"
+                ? "active-route mt-3"
+                : "deactive-route mt-3"
+            }
+            href="/sap-business-one"
+          >
+            SAP B-One
+          </a>
+
+          <a
+            className={
+              route === "industries"
+                ? "active-route mt-3"
+                : "deactive-route mt-3"
+            }
+            href="/industries"
+          >
+            Industries
           </a>
           <a
             className={

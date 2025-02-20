@@ -2,10 +2,10 @@ import "../../../styles/pages/common/ContactUs.css";
 
 export const ContactUs = () => {
   return (
-    <div className="pb-4 pb-mb-5 pt-4">
+    <div className="pb-4 pb-mb-5">
       <div className="Contact-Us px-4 px-md-5 pt-4 pt-md-5">
         <div className="pt-3">
-          <p className="mb-0 info-tag">CONTACT US</p>
+          <p className="mb-0 info-tag-c">CONTACT US</p>
           <h3>BETTER YET, SEE US IN PERSON</h3>
         </div>
       </div>

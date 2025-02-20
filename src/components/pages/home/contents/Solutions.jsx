@@ -1,5 +1,5 @@
 import "../../../../styles/pages/home/contents/Solutions.css";
-import erp from "../../../../assets/images/home/erp.jpg";
+import erp from "../../../../assets/images/home/erp.png";
 import partners from "../../../../assets/images/home/partners.jpg";
 import development from "../../../../assets/images/home/development.jpg";
 import consulting from "../../../../assets/images/home/consulting.jpg";
@@ -37,9 +37,9 @@ export const Solutions = () => {
               <div className="px-3 pt-3">
                 <h6>ERP Implementation & Support</h6>
                 <p>
-                  Our team specializes in ERP solutions, ensuring seamless
-                  implementation, integration, and ongoing support to improve
-                  your business operations.
+                  Expertise in implementing and supporting SAP Business One and
+                  SAP S/4 HANA ERP solutions to streamline business operations
+                  and drive efficiency.
                 </p>
               </div>
             </div>
@@ -69,11 +69,11 @@ export const Solutions = () => {
               </div>
 
               <div className="px-3 pt-3">
-                <h6>Technology Partnerships</h6>
+                <h6>Business Process Reengineering</h6>
                 <p>
-                  Through our partnerships with leading software vendors, we
-                  deliver state-of-the-art solutions that drive business success
-                  and digital transformation.
+                  Redesign and optimize business workflows to enhance
+                  productivity, ensuring seamless operations and long-term
+                  growth through innovative process improvements.
                 </p>
               </div>
             </div>

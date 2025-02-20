@@ -1,0 +1,31 @@
+.SapBOneIntro {
+  background-image: url(../../../assets/images/sap/sapb1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.SapBOne-Background {
+  background-color: rgba(0, 0, 0, 0.641);
+}
+
+.SapBOne-Background p {
+  font-family: "R4";
+  color: rgb(255, 255, 255);
+}
+
+.SapBOne-Background h5 {
+  font-family: "R3";
+  color: rgb(142, 224, 240);
+}
+
+.b1Logo-Sub {
+  width: 200px;
+}
+
+.sap-com-img {
+  height: 300px;
+}
+
+.sap-mobi-img {
+  width: 90%;
+}

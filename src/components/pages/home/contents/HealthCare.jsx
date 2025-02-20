@@ -16,10 +16,6 @@ export const HealthCare = () => {
         <h3>DIGITAL HEALTH CHECK</h3>
         <div className="row gx-3 mt-4">
           <div className="col-lg-6">
-            <div className="Image-Col"></div>
-          </div>
-
-          <div className="col-lg-6">
             <div className="row gx-3 gy-3">
               <div className="col-12 col-sm-6">
                 <div className="first-col px-3 py-3">
@@ -94,6 +90,10 @@ export const HealthCare = () => {
                 </div>
               </div>
             </div>
+          </div>
+
+          <div className="col-lg-6">
+            <div className="Image-Col"></div>
           </div>
         </div>
         <div className="pt-2"></div>
