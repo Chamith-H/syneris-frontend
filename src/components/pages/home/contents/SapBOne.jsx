@@ -4,7 +4,7 @@ import sap from "../../../../assets/images/home/sap.png";
 
 export const SAPBOne = () => {
   return (
-    <div className="SapBOne px-5 py-5">
+    <div className="SapBOne px-4 py-4 px-md-5 py-md-5">
       <div className="py-4">
         <p className="mb-0 info-tag">SAP BUSINESS ONE</p>
         <h3>THE COMPLETE ERP SOLUTION FOR GROWING BUSINESSES</h3>

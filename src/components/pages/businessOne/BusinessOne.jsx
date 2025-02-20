@@ -15,7 +15,7 @@ export const BusinessOne = () => {
       <div className="SapBOneIntro">
         <div className="SapBOne-Background">
           <div className="d-flex flex-column flex-lg-row justify-content-lg-between">
-            <div className="py-5 ps-5 pe-3">
+            <div className="py-5 px-4 ps-md-5 pe-md-3">
               <div className="py-4">
                 <h5>SAP BUSINESS ONE</h5>
                 <p className="mb-0">
