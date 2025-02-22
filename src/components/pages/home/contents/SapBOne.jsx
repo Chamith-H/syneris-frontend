@@ -19,8 +19,7 @@ export const SAPBOne = () => {
 
         <div className="d-flex w-100 flex-column align-items-between flex-md-row justify-content-md-between align-items-md-end mt-4">
           <div className="d-flex align-items-center">
-            <img className="b1Logo d-none d-md-block" src={sap} alt="sapb1" />
-            <img className="b1Img ms-md-5" src={sapB1} alt="sapb1" />
+            <img className="b1Img" src={sapB1} alt="sapb1" />
           </div>
 
           <div className="d-flex justify-content-end">

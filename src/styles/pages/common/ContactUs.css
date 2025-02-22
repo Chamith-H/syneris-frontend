@@ -1,29 +1,6 @@
 .Contact-Us {
-  background-image: url(../../../assets/images/common/contact.png);
-  background-size: cover;
-  background-position: top;
-  height: 300px;
-}
-
-.Contact-Us p {
-  font-family: "R3";
-  color: #ffffffc2;
-  font-size: 13px;
-  text-shadow: 1px 1px 1px rgb(12, 140, 167);
-}
-
-.Contact-Us h3 {
-  font-family: "R2";
-  color: rgba(255, 255, 255, 0.918);
-  text-shadow: 1px 1px 1px rgb(12, 140, 167);
-}
-
-.Form-Fields {
-  background-color: rgb(255, 255, 255);
-  border-style: solid;
-  border-width: 2px;
-  border-color: rgb(219, 219, 219);
-  border-radius: 5px;
+  background-color: rgba(12, 138, 166, 0.133);
+  overflow-y: hidden;
 }
 
 .Form-Fields label {
@@ -35,7 +12,7 @@
   outline: none;
   height: 37px;
   border-style: solid;
-  border-radius: 4px;
+  border-radius: 3px;
   border-width: 1px;
   border-color: rgb(215, 215, 215);
   padding-left: 10px;
@@ -46,7 +23,7 @@
   outline: none;
   height: 100px;
   border-style: solid;
-  border-radius: 4px;
+  border-radius: 3px;
   border-width: 1px;
   border-color: rgb(215, 215, 215);
   padding-left: 10px;
@@ -65,45 +42,66 @@
   font-size: 14px;
 }
 
-.contact-row {
-  margin-top: -140px;
+.Form-Fields button {
+  border-style: none;
+  background-color: rgb(9, 101, 122);
+  font-family: "R3";
+  font-size: 14px;
+  height: 32px;
+  color: rgb(255, 255, 255);
+  border-radius: 3px;
 }
 
-.contact-description {
-  margin-top: 170px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 170px;
-}
-
-@media (max-width: 767px) {
-  .contact-description {
-    margin-top: 0;
-  }
-}
-
-.contact-description p {
+.con-des {
   font-family: "R4";
+  color: black;
 }
 
-.contact-description button {
-  background-color: rgb(1, 84, 56);
-  border-style: none;
-  border-radius: 4px;
-  width: 300px;
-  font-size: 15px;
-  font-family: "R3";
-  color: rgb(255, 255, 255);
-}
-
-.submit-Button {
-  background-color: rgb(12, 140, 167);
-  border-style: none;
-  border-radius: 4px;
+.contact-side-back-img-1 {
+  height: 100%;
   width: 100%;
-  font-size: 15px;
+  background-image: url(../../../assets/images/common/imgOne.jpg);
+  background-size: cover;
+  background-position: top;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.contact-side-back-img-2 {
+  height: 100%;
+  width: 100%;
+  background-image: url(../../../assets/images/common/imgTwo.jpg);
+  background-size: cover;
+  background-position: top;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.contact-side-back-img-3 {
+  height: 100%;
+  width: 100%;
+  background-image: url(../../../assets/images/common/wtsappBack.jpg);
+  background-size: cover;
+  background-position: top;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.contact-side-back-img-3 img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.contact-side-back-img-3 a {
   font-family: "R3";
-  color: rgb(255, 255, 255);
-  height: 38px;
+  font-size: 14px;
+  color: aliceblue;
+  text-decoration: none;
+  text-align: center;
+}
+
+.align-c-back {
+  background-color: rgba(0, 0, 0, 0.438);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
 }

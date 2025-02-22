@@ -1,7 +1,7 @@
 import "../../../styles/pages/businessOne/BusinessOne.css";
 import b1Logo from "../../../assets/images/home/sapB1.png";
-import sapCom from "../../../assets/images/sap/sapcom.png";
-import sapMobil from "../../../assets/images/sap/sapMobil.png";
+import sapCom from "../../../assets/images/sap/sapBack.png";
+import sapMobil from "../../../assets/images/sap/sapMobiBack.png";
 
 import operations from "../../../assets/images/sap/operations.gif";
 import cost from "../../../assets/images/sap/cost.gif";
@@ -15,7 +15,7 @@ export const BusinessOne = () => {
       <div className="SapBOneIntro">
         <div className="SapBOne-Background">
           <div className="d-flex flex-column flex-lg-row justify-content-lg-between">
-            <div className="py-5 px-4 ps-md-5 pe-md-3">
+            <div className="py-5 px-4 ps-md-5 pe-md-4">
               <div className="py-4">
                 <h5>SAP BUSINESS ONE</h5>
                 <p className="mb-0">
