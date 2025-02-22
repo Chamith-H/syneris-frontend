@@ -22,13 +22,21 @@ export const Hero = () => {
       }
     }, 3000);
 
-    return () => clearInterval(intervalRef.current); // Cleanup on unmount
+    return () => clearInterval(intervalRef.current);
   }, []);
 
   const clearIntervalTime = () => {
     if (intervalRef.current) {
       clearInterval(intervalRef.current);
     }
+
+    intervalRef.current = setInterval(() => {
+      const carouselElement = document.getElementById("carouselExample");
+      if (carouselElement) {
+        const carousel = new window.bootstrap.Carousel(carouselElement);
+        carousel.next();
+      }
+    }, 3000);
   };
 
   return (
