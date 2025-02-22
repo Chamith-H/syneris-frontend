@@ -25,9 +25,15 @@
 
 .Appointments button {
   border-style: none;
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffff;
   color: black;
   border-radius: 4px;
-  font-family: "R3";
+  font-family: "R2";
   font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.Appointments button img {
+  height: 40px;
 }

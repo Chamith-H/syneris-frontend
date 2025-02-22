@@ -1,4 +1,5 @@
 import "../../../../styles/pages/home/contents/Appointments.css";
+import booking from "../../../../assets/images/home/bookingX.gif";
 import { useNavigate } from "react-router-dom";
 
 export const Appointments = () => {
@@ -30,8 +31,9 @@ export const Appointments = () => {
             customer experience, and achieve sustainable growth.
           </p>
 
-          <button onClick={() => clickToBook()} className="px-4 py-2">
-            Book Now
+          <button onClick={() => clickToBook()} className="ps-4 pe-3">
+            <p className="mb-0">Book Now</p>
+            <img src={booking} alt="" />
           </button>
         </div>
       </div>

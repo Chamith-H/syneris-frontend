@@ -1,0 +1,132 @@
+.ContactIntro {
+  background-image: url(../../../assets/images/contact/contactBack.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.Contact-Background {
+  background-color: rgba(0, 0, 0, 0.759);
+}
+
+.Contact-Background p {
+  font-family: "R4";
+  color: rgb(255, 255, 255);
+}
+
+.Contact-Background h5 {
+  font-family: "R3";
+  color: rgb(142, 224, 240);
+}
+
+.sap-com-img {
+  height: 250px;
+  border-top-left-radius: 4px;
+}
+.sap-mobi-img {
+  width: 90%;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.Contact-Background button img {
+  width: 40px;
+}
+
+.Contact-Background button {
+  display: flex;
+  align-items: center;
+  border-style: none;
+  background-color: rgba(255, 255, 255, 0.255);
+  border-radius: 3px;
+}
+
+.Contact-Background button p {
+  font-family: "R3";
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+}
+
+.Contact-m-Options h6 {
+  font-family: "R2";
+  font-size: 15px;
+}
+
+.Contact-m-Options p {
+  font-family: "R4";
+  font-size: 15px;
+  color: black;
+}
+
+.s-images img {
+  height: 35px;
+  margin-right: 5px;
+}
+
+.input-sec {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-m-form input {
+  width: 100%;
+}
+
+.contact-m-form {
+  background-color: rgba(12, 138, 166, 0.133);
+}
+
+.input-sec label {
+  font-family: "R3";
+  font-size: 13px;
+  color: black;
+}
+
+.input-sec input {
+  outline: none;
+  height: 37px;
+  border-style: solid;
+  border-radius: 3px;
+  border-width: 1px;
+  border-color: rgb(215, 215, 215);
+  padding-left: 10px;
+  font-family: "R3";
+}
+
+.input-sec textarea {
+  outline: none;
+  height: 150px;
+  border-style: solid;
+  border-radius: 3px;
+  border-width: 1px;
+  border-color: rgb(215, 215, 215);
+  padding-left: 10px;
+  font-family: "R3";
+}
+
+.input-sec input::placeholder {
+  font-family: "R4";
+  color: rgb(159, 159, 159);
+  font-size: 14px;
+}
+
+.input-sec textarea::placeholder {
+  font-family: "R4";
+  color: rgb(159, 159, 159);
+  font-size: 14px;
+}
+
+.contact-m-form button {
+  border-style: none;
+  background-color: rgb(9, 101, 122);
+  font-family: "R3";
+  font-size: 14px;
+  height: 32px;
+  color: rgb(255, 255, 255);
+  border-radius: 3px;
+}
+
+.divBorder {
+  border-top-style: solid;
+  border-width: 1px;
+  border-color: rgba(9, 101, 122, 0.214);
+}

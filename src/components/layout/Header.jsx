@@ -34,7 +34,7 @@ export const Header = () => {
         <img src={Logo} alt="syneris-logo" />
       </div>
 
-      <div className="d-none d-md-block">
+      <div className="d-none d-lg-block">
         <div className="Desktop-Navigations">
           <a
             className={route === "" ? "active-route" : "deactive-route"}
@@ -58,7 +58,17 @@ export const Header = () => {
             }
             href="/sap-business-one"
           >
-            SAP B-One
+            SAP Business One
+          </a>
+          <a
+            className={
+              route === "sap-s4-hana"
+                ? "active-route ms-4"
+                : "deactive-route ms-4"
+            }
+            href="/sap-s4-hana"
+          >
+            SAP S/4 Hana
           </a>
           <a
             className={
@@ -72,6 +82,14 @@ export const Header = () => {
           </a>
           <a
             className={
+              route === "contact" ? "active-route ms-4" : "deactive-route ms-4"
+            }
+            href="/contact"
+          >
+            Contact Us
+          </a>
+          <a
+            className={
               route === "about" ? "active-route ms-4" : "deactive-route ms-4"
             }
             href="/about"
@@ -81,7 +99,7 @@ export const Header = () => {
         </div>
       </div>
 
-      <div className="d-md-none">
+      <div className="d-lg-none">
         <button
           onClick={() => setIsExpanded(!isExpanded)}
           className="Toggle-button"
@@ -138,6 +156,16 @@ export const Header = () => {
           >
             Industries
           </a>
+
+          <a
+            className={
+              route === "contact" ? "active-route mt-3" : "deactive-route mt-3"
+            }
+            href="/contact"
+          >
+            Contact Us
+          </a>
+
           <a
             className={
               route === "about" ? "active-route mt-3" : "deactive-route mt-3"
