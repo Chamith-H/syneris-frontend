@@ -8,11 +8,13 @@ import hero2ImgSmall from "../../../../assets/images/home/hero2ImgSmall.png";
 import hero3Img from "../../../../assets/images/home/hero3Img.png";
 import hero3ImgSmall from "../../../../assets/images/home/hero3ImgSmall.png";
 
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 export const Hero = () => {
+  const intervalRef = useRef(null);
+
   useEffect(() => {
-    const interval = setInterval(() => {
+    intervalRef.current = setInterval(() => {
       const carouselElement = document.getElementById("carouselExample");
       if (carouselElement) {
         const carousel = new window.bootstrap.Carousel(carouselElement);
@@ -20,8 +22,15 @@ export const Hero = () => {
       }
     }, 3000);
 
-    return () => clearInterval(interval); // Cleanup on unmount
+    return () => clearInterval(intervalRef.current); // Cleanup on unmount
   }, []);
+
+  const clearIntervalTime = () => {
+    if (intervalRef.current) {
+      clearInterval(intervalRef.current);
+    }
+  };
+
   return (
     <div className="Hero-Section">
       <div id="carouselExample" class="carousel slide">
@@ -179,6 +188,7 @@ export const Hero = () => {
           type="button"
           data-bs-target="#carouselExample"
           data-bs-slide="prev"
+          onClick={() => clearIntervalTime()}
         >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
@@ -188,6 +198,7 @@ export const Hero = () => {
           type="button"
           data-bs-target="#carouselExample"
           data-bs-slide="next"
+          onClick={() => clearIntervalTime()}
         >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
