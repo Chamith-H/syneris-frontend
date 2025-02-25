@@ -16,6 +16,11 @@
   color: black;
 }
 
+.main-t-all {
+  font-family: "R2";
+  color: rgb(50, 50, 50);
+}
+
 .first-col {
   background-color: rgb(10, 112, 134);
   height: 100%;

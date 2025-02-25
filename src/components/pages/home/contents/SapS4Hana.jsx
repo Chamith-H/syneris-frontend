@@ -6,7 +6,7 @@ export const SapS4Hana = () => {
     <div className="SapS4Hana px-4 py-4 px-md-5 py-md-5">
       <div className="py-4">
         <p className="mb-0 info-tag">SAP S/4HANA</p>
-        <h3 className="s4-des">THE INTELLIGENT ERP FOR THE DIGITAL AGE</h3>
+        <h3 className="main-t-all">THE INTELLIGENT ERP FOR THE DIGITAL AGE</h3>
 
         <p className="sap-description">
           SAP S/4HANA is an intelligent, next-generation ERP suite designed to

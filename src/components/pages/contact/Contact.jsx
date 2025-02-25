@@ -127,7 +127,7 @@ export const Contact = () => {
       <div className="contact-m-form px-4 py-4 px-md-5 py-md-5">
         <form action="" className="py-4">
           <p className="mb-0 info-tag">GET IN TOUCH</p>
-          <h3>SEND US A MESSAGE TODAY</h3>
+          <h3 className="con-des">SEND US A MESSAGE TODAY</h3>
           <div className="divBorder"></div>
           <div className="row mt-3">
             <div className="col-md-6">

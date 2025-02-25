@@ -19,6 +19,11 @@
   width: 130px;
 }
 
+.main-t-all {
+  font-family: "R2";
+  color: rgb(50, 50, 50);
+}
+
 .industry-card p {
   font-family: "R3";
   font-size: 14px;

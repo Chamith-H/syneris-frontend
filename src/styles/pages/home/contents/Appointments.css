@@ -19,7 +19,7 @@
 
 .Appointments-Intro-t {
   font-family: "R2";
-  color: rgba(255, 255, 255, 0.847);
+  color: rgb(255, 255, 255);
   text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
 
@@ -53,8 +53,8 @@
 }
 
 .Appointments h6 {
-  font-family: "R3";
+  font-family: "R2";
   color: rgba(255, 255, 255, 0.893);
   text-shadow: 1px 1px 1px rgb(0, 0, 0);
-  font-size: 15px;
+  font-size: 16px;
 }

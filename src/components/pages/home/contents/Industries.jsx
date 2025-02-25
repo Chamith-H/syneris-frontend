@@ -9,7 +9,7 @@ export const Industries = () => {
     <div className="Industries px-4 py-4 px-md-5 py-md-5">
       <div className="pt-4">
         <p className="mb-0 info-tag">INDUSTRIES WE SUPPORT</p>
-        <h3>
+        <h3 className="main-t-all">
           TAILORED INDUSTRY SOLUTIONS THAT DRIVE EFFICIENCY, INNOVATION, AND
           SUSTAINABLE GROWTH
         </h3>

@@ -1,5 +1,5 @@
 .SapBOne {
-  background-color: rgb(240, 240, 240);
+  background: linear-gradient(to bottom, rgb(240, 240, 240), #ffffff);
 }
 
 .sap-description {
@@ -20,6 +20,11 @@
   font-family: "R3";
   font-size: 15px;
   color: rgba(12, 141, 167, 0.784);
+}
+
+.main-t-all {
+  font-family: "R2";
+  color: rgb(50, 50, 50);
 }
 
 .SapBOne a:hover {

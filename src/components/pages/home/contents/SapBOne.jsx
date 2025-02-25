@@ -6,7 +6,7 @@ export const SAPBOne = () => {
     <div className="SapBOne px-4 py-4 px-md-5 py-md-5">
       <div className="py-4">
         <p className="mb-0 info-tag">SAP BUSINESS ONE</p>
-        <h3>THE COMPLETE ERP SOLUTION FOR GROWING BUSINESSES</h3>
+        <h3 className="main-t-all">THE COMPLETE ERP SOLUTION FOR GROWING BUSINESSES</h3>
 
         <p className="sap-description">
           SAP Business One is a comprehensive, integrated ERP solution designed

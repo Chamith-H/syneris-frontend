@@ -8,9 +8,9 @@ export const ContactUs = () => {
         <div className="row">
           <div className="col-sm-6 pe-5">
             <p className="mb-0 info-tag">CONTACT US</p>
-            <h3>BETTER YET, SEE US IN PERSON</h3>
+            <h3 className="main-t-all">BETTER YET, SEE US IN PERSON</h3>
 
-            <p className="con-des">
+            <p className="con-des-p">
               We truly appreciate and love our customers, and we warmly welcome
               you to visit us in person during our normal business hours to
               connect and receive assistance.

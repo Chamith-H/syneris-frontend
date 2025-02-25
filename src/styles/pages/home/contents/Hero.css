@@ -17,17 +17,18 @@
 .Hero2-Main-Title {
   font-family: "R1";
   color: rgb(0, 190, 228);
-  text-shadow: 1px 1px 1px rgb(10, 112, 134);
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
 
 .Hero2-Sub-Title {
   font-family: "R4";
   color: rgba(255, 255, 255, 0.778);
-  text-shadow: 1px 1px 1px rgb(10, 112, 134);
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
 
 .Hero2-Main-Title span {
   color: rgba(255, 255, 255, 0.882);
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
 
 .Hero3-Main-Title {
@@ -44,10 +45,12 @@
 
 .Hero3-Main-Title span {
   color: rgb(228, 250, 255);
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
 
 .Hero-Main-Title span {
   color: rgb(12, 140, 167);
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
 
 .Hero-Image {

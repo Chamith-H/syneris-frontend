@@ -36,7 +36,7 @@ export const About = () => {
             </div>
           </div>
 
-          <div className="col-md-6 d-flex flex-column justify-content-center py-5 py-md-0 px-4 pe-md-5 vision-des">
+          <div className="col-md-6 d-flex flex-column justify-content-center pb-5 pt-md-5 py-md-0 px-4 pe-md-5 vision-des">
             <h5>OUR VISION</h5>
             <p className="vis-p">
               To be the preferred partner for digital transformation and
@@ -101,7 +101,7 @@ export const About = () => {
             </div>
           </div>
 
-          <div className="col-md-6 d-flex flex-column justify-content-center px-4 pe-md-5 vision-des py-5">
+          <div className="col-md-6 d-flex flex-column justify-content-center px-4 pe-md-5 vision-des pb-5 pt-md-5">
             <h5>OUR VALUES</h5>
             <p className="mb-1 value-ps">
               <span>Innovation:</span>&nbsp;Constantly evolving with the lates
