@@ -1,4 +1,4 @@
-import "../../../styles/pages/S4Hana/S4Hana.css";
+import "../../../styles/pages/s4hana/s4hana.css";
 import b1Logo from "../../../assets/images/home/sapS4.png";
 import sapCom from "../../../assets/images/sap/s4Back.png";
 import sapMobil from "../../../assets/images/sap/s4Mobi.png";
