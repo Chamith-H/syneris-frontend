@@ -18,7 +18,7 @@ export const S4Hana = () => {
           <div className="d-flex flex-column flex-lg-row justify-content-lg-between">
             <div className="py-5 px-4 ps-md-5 pe-md-4">
               <div className="py-4">
-                <h5>SAP S4HANA</h5>
+                <h5>SAP S4HANA PUBLIC CLOUD</h5>
                 <p className="mb-0">
                   SAP S/4HANA is an intelligent, next-generation ERP suite
                   designed to help large enterprises and fast-growing businesses

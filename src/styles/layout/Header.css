@@ -19,10 +19,10 @@
 }
 
 .deactive-route {
-  font-family: "R2";
+  font-family: "R3";
   text-decoration: none;
   font-size: 14px;
-  color: rgb(127, 127, 127);
+  color: rgb(104, 104, 104);
 }
 
 .active-route {

@@ -15,7 +15,9 @@ export const BookingOption = () => {
     <div className="BookingOption ps-4 pt-4 ps-md-5 pt-md-5">
       <div className="pt-4">
         <p className="mb-0 info-tag">BOOKING</p>
-        <h3>SCHEDULE YOUR FREE EXPLORATORY CALL TODAY!</h3>
+        <h3 className="main-t-all">
+          SCHEDULE YOUR FREE EXPLORATORY CALL TODAY!
+        </h3>
 
         <ul className="Booking-points">
           <li>
