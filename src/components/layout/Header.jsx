@@ -76,7 +76,7 @@ export const Header = () => {
             }
             href="/sap-s4-hana"
           >
-            SAP S/4 Hana
+            SAP S/4 HANA
           </a>
           <a
             className={
@@ -137,6 +137,15 @@ export const Header = () => {
 
           <a
             className={
+              route === "about" ? "active-route mt-3" : "deactive-route mt-3"
+            }
+            href="/about"
+          >
+            About Us
+          </a>
+
+          <a
+            className={
               route === "sap-business-one"
                 ? "active-route mt-3"
                 : "deactive-route mt-3"
@@ -144,6 +153,17 @@ export const Header = () => {
             href="/sap-business-one"
           >
             SAP B-One
+          </a>
+
+          <a
+            className={
+              route === "sap-s4-hana"
+                ? "active-route mt-3"
+                : "deactive-route mt-3"
+            }
+            href="/sap-s4-hana"
+          >
+            SAP S4 HANA
           </a>
 
           <a
@@ -164,15 +184,6 @@ export const Header = () => {
             href="/contact"
           >
             Contact Us
-          </a>
-
-          <a
-            className={
-              route === "about" ? "active-route mt-3" : "deactive-route mt-3"
-            }
-            href="/about"
-          >
-            About Us
           </a>
         </div>
       </div>
