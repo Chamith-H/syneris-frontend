@@ -11,11 +11,13 @@
 .SapBOne-Background p {
   font-family: "R4";
   color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
 
 .SapBOne-Background h5 {
   font-family: "R3";
-  color: rgb(142, 224, 240);
+  color: rgb(150, 229, 245);
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
 
 .b1Logo-Sub {

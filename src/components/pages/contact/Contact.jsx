@@ -8,8 +8,22 @@ import "../../../styles/pages/contact/Contact.css";
 import facebook from "../../../assets/images/contact/facebook.png";
 import linkedin from "../../../assets/images/contact/linkedin.png";
 import wtsapp from "../../../assets/images/contact/wtsap.png";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import "leaflet.gridlayer.googlemutant";
+import L from "leaflet";
 
 export const Contact = () => {
+  const lng = 79.8791;
+  const lat = 6.94071;
+
+  const redIcon = new L.Icon({
+    iconUrl:
+      "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png", // Red marker icon URL
+    iconSize: [20, 32], // Adjust size if needed
+    iconAnchor: [16, 32], // Center the icon
+    popupAnchor: [0, -32], // Position the popup correctly
+  });
+
   return (
     <div className="Contact">
       <div className="ContactIntro">
@@ -25,30 +39,21 @@ export const Contact = () => {
                   connect with us, we warmly welcome you to visit us in person
                   during our normal business hours.
                 </p>
-
-                <button className="px-4 py-2 mt-4">
-                  <img src={whatsapp} alt="" />
-                  <p className="mb-0 ms-2">Message us on WhatsApp</p>
-                </button>
               </div>
             </div>
 
-            <div className="d-flex d-lg-none w-100 justify-content-center">
-              <img className="sap-mobi-img" src={sapMobil} alt="" />
-            </div>
-
-            <div className="d-lg-flex justify-content-end align-items-end pt-lg-5 d-none ">
-              <img className="sap-com-img" src={sapCom} alt="" />
+            <div className="d-flex justify-content-end align-items-end pt-lg-5">
+              <img className="contact-img" src={sapCom} alt="" />
             </div>
           </div>
         </div>
       </div>
 
-      <div className="Contact-m-Options px-4 py-4 px-md-5 py-md-5">
-        <div className="row">
-          <div className="col-6">
-            <div className="row gy-4">
-              <div className="col-6">
+      <div className="Contact-m-Options pt-5 px-4 ps-md-5 pe-md-0">
+        <div className="row g-0">
+          <div className="col-md-6 py-4 py-md-5">
+            <div className="row gy-4 pb-4 pb-md-5">
+              <div className="col-sm-6">
                 <div className="address">
                   <h6>Visit Us</h6>
                   <p>
@@ -63,7 +68,7 @@ export const Contact = () => {
                 </div>
               </div>
 
-              <div className="col-6">
+              <div className="col-sm-6">
                 <div className="phone-no">
                   <h6>Phone Number</h6>
                   <p>
@@ -73,7 +78,7 @@ export const Contact = () => {
                 </div>
               </div>
 
-              <div className="col-6">
+              <div className="col-sm-6">
                 <div className="social-media">
                   <h6>Social Media</h6>
 
@@ -85,7 +90,7 @@ export const Contact = () => {
                 </div>
               </div>
 
-              <div className="col-6">
+              <div className="col-sm-6">
                 <div className="our-contacts-2">
                   <div className="email">
                     <h6>Email</h6>
@@ -96,26 +101,45 @@ export const Contact = () => {
             </div>
           </div>
 
-          <div className="col-6"></div>
+          <div className="col-md-6 pt-md-3">
+            <div className="locationMap">
+              <MapContainer
+                center={[lat, lng]}
+                zoom={14}
+                style={{ height: "100%", width: "100%" }}
+              >
+                {/* Tile Layer */}
+                <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+                <TileLayer url="https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}" />
+
+                {/* Marker */}
+                <Marker position={[lat, lng]} icon={redIcon}>
+                  <Popup>
+                    Latitude: {lat}, Longitude: {lng}
+                  </Popup>
+                </Marker>
+              </MapContainer>
+            </div>
+          </div>
         </div>
       </div>
 
       <div className="contact-m-form px-4 py-4 px-md-5 py-md-5">
-        <form action="">
+        <form action="" className="py-4">
           <p className="mb-0 info-tag">GET IN TOUCH</p>
           <h3>SEND US A MESSAGE TODAY</h3>
           <div className="divBorder"></div>
           <div className="row mt-3">
-            <div className="col-6">
+            <div className="col-md-6">
               <div className="input-sec mt-2">
                 <label>Name</label>
                 <input type="text" placeholder="Enter your name" />
               </div>
             </div>
 
-            <div className="col-6">
+            <div className="col-md-6">
               <div className="input-sec mt-2">
-                <label>Name</label>
+                <label>Email</label>
                 <input type="text" placeholder="Enter your email" />
               </div>
             </div>

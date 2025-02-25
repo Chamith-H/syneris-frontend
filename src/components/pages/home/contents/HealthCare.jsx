@@ -12,7 +12,7 @@ export const HealthCare = () => {
   return (
     <div className="HeathCare px-4 py-4 px-md-5 py-md-5">
       <div className="py-4">
-        <p className="mb-0 info-tag">FREE DIGITAL AUDIT</p>
+        {/* <p className="mb-0 info-tag">FREE DIGITAL AUDIT</p> */}
         <h3>DIGITAL HEALTH CHECK</h3>
         <div className="row gx-3 mt-4">
           <div className="col-lg-6">

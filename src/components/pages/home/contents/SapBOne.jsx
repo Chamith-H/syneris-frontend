@@ -1,6 +1,5 @@
 import "../../../../styles/pages/home/contents/SapBOne.css";
 import sapB1 from "../../../../assets/images/home/sapB1.png";
-import sap from "../../../../assets/images/home/sap.png";
 
 export const SAPBOne = () => {
   return (

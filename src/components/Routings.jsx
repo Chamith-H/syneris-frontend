@@ -5,6 +5,7 @@ import { About } from "./pages/about/About";
 import { Industry } from "./pages/industry/Industry";
 import { BusinessOne } from "./pages/businessOne/BusinessOne";
 import { Contact } from "./pages/contact/Contact";
+import { S4Hana } from "./pages/s4hana/S4hana";
 
 export const Routings = () => {
   return (
@@ -16,6 +17,7 @@ export const Routings = () => {
         <Route path="/industries" element={<Industry />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/sap-business-one" element={<BusinessOne />} />
+        <Route path="/sap-s4-hana" element={<S4Hana />} />
       </Routes>
     </Router>
   );

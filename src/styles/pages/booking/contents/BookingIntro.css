@@ -4,15 +4,17 @@
 }
 
 .Booking-Background {
-  background-color: rgba(0, 0, 0, 0.641);
+  background-color: rgba(0, 0, 0, 0.744);
 }
 
 .Booking-Background p {
   font-family: "R4";
   color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
 
 .Booking-Background h5 {
   font-family: "R3";
-  color: rgb(142, 224, 240);
+  color: rgb(150, 229, 245);
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }

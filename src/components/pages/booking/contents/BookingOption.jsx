@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "../../../../styles/pages/booking/contents/BookingOption.css";
 import Calendar from "react-calendar";
+import bookingSide from "../../../../assets/images/booking/bookingSide.png";
 
 export const BookingOption = () => {
   const [value, setValue] = useState(new Date());
@@ -11,10 +12,10 @@ export const BookingOption = () => {
   };
 
   return (
-    <div className="BookingOption px-4 py-4 px-md-5 py-md-5">
-      <div className="py-4">
+    <div className="BookingOption ps-4 pt-4 ps-md-5 pt-md-5">
+      <div className="pt-4">
         <p className="mb-0 info-tag">BOOKING</p>
-        <h3>MEET YOUR PERFECT MATCH, ANYTIME, ANYWHERE</h3>
+        <h3>SCHEDULE YOUR FREE EXPLORATORY CALL TODAY!</h3>
 
         <ul className="Booking-points">
           <li>
@@ -37,14 +38,17 @@ export const BookingOption = () => {
             sustainable growth.
           </li>
         </ul>
-
-        <div className="row g-0 mt-4">
-          <div className="col-12 col-md-6">
-            <Calendar onChange={(e) => changeValue(e)} value={value} />
+        <div className="row g-0 mt-5">
+          <div className="col-12 col-lg-6 pb-5">
+            <div className="pb-4">
+              <Calendar onChange={(e) => changeValue(e)} value={value} />
+            </div>
           </div>
 
-          <div className="d-none col-md-6 d-md-block ps-md-4">
-            <div className="side-img-book"></div>
+          <div className="d-none col-md-6 d-lg-block ps-md-4">
+            <div className="side-img-book">
+              <img src={bookingSide} alt="" />
+            </div>
           </div>
         </div>
       </div>

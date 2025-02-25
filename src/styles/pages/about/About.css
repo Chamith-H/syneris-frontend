@@ -1,0 +1,125 @@
+.AboutIntro {
+  background-image: url(../../../assets/images/about/aboutBack.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.About-Background {
+  background-color: rgba(0, 0, 0, 0.641);
+}
+
+.About-Background p {
+  font-family: "R4";
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+.About-Background h5 {
+  font-family: "R3";
+  color: rgb(150, 229, 245);
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+.About-Mission {
+  background-color: rgba(12, 138, 166, 0.159);
+}
+
+.mission-card h6 {
+  font-family: "R2";
+  font-size: 15px;
+}
+
+.mission-card p {
+  font-family: "R4";
+  color: black;
+}
+
+.mis-card-img {
+  height: 50px;
+  width: 50px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(12, 138, 166, 0.299);
+}
+
+.mission-card img {
+  height: 35px;
+  border-radius: 100%;
+}
+
+.mission-title {
+  font-family: "R2";
+  font-size: 35px;
+  color: rgb(9, 101, 122);
+}
+
+.vision-side-img {
+  width: 120%;
+  margin-left: -50%;
+}
+
+.vision-title-back {
+  background-color: rgb(9, 101, 122);
+}
+
+.vision-des h5 {
+  font-family: "R2";
+  font-size: 35px;
+  color: rgb(9, 101, 122);
+}
+
+.value-ps {
+  font-family: "R4";
+  color: black;
+}
+
+.vis-p {
+  font-family: "R4";
+  font-size: 17px;
+  color: black;
+}
+
+.value-ps span {
+  font-family: "R2";
+  color: black;
+}
+
+.about-team {
+  background-color: rgba(12, 138, 166, 0.159);
+}
+
+.about-team h3 {
+  font-family: "R2";
+  color: rgb(50, 50, 50);
+}
+
+.info-tag {
+  font-family: "R3";
+  color: rgb(12, 140, 167);
+  font-size: 13px;
+}
+
+.team-img-box img {
+  width: 250px;
+  margin-bottom: 10px;
+}
+
+.team-m-des {
+  font-family: "R4";
+  color: black;
+}
+
+.team-img-box h6 {
+  font-family: "R2";
+  color: #000;
+}
+
+.team-img-box p {
+  font-family: "R3";
+  color: rgb(101, 101, 101);
+}

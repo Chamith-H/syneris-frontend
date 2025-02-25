@@ -4,7 +4,11 @@
 }
 
 .background-align-app {
-  background-color: rgba(0, 0, 0, 0.767);
+  background-color: rgba(0, 0, 0, 0.826);
+}
+
+.background-align-app-2 {
+  background-color: #000000eb;
 }
 
 .info-tag-a {
@@ -13,27 +17,45 @@
   font-size: 13px;
 }
 
-.Appointments h3 {
+.Appointments-Intro-t {
   font-family: "R2";
-  color: rgba(255, 255, 255, 0.871);
+  color: rgba(255, 255, 255, 0.847);
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+.Appointments-Intro-t-h {
+  font-family: "R2";
+  color: #46daf8;
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
+  font-size: 30px;
 }
 
 .solution-description-a {
   font-family: "R4";
   color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
 
-.Appointments button {
+.Appointments a {
   border-style: none;
-  background-color: #ffffff;
+  background-color: rgb(255, 255, 255);
   color: black;
   border-radius: 4px;
   font-family: "R2";
   font-size: 14px;
   display: flex;
   align-items: center;
+  width: 145px;
+  text-decoration: none;
 }
 
-.Appointments button img {
+.Appointments a img {
   height: 40px;
+}
+
+.Appointments h6 {
+  font-family: "R3";
+  color: rgba(255, 255, 255, 0.893);
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
+  font-size: 15px;
 }

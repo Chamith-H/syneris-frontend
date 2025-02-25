@@ -5,7 +5,7 @@ export const BookingIntro = () => {
     <div className="BookingIntro">
       <div className="Booking-Background px-4 py-4 px-md-5 py-md-5">
         <div className="py-4">
-          <h5>ONLINE APPOINTMENTS</h5>
+          <h5>TRANSFORMATION READINESS ASSESSMENT</h5>
           <p className="mb-0">
             We collaborate with you to identify business challenges, assess
             inefficiencies, and highlight key areas for improvement. Our team

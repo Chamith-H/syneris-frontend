@@ -1,0 +1,30 @@
+.SapS4Hana {
+  background-color: rgb(223,239,243);
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-color: rgb(226, 226, 226);
+}
+
+.sap-description {
+  font-family: "R4";
+  color: black;
+}
+
+.b1Logo {
+  width: 150px;
+}
+
+.b1Img-s4 {
+  width: 300px;
+}
+
+.SapS4Hana a {
+  text-decoration: none;
+  font-family: "R3";
+  font-size: 15px;
+  color: rgba(12, 141, 167, 0.784);
+}
+
+.SapS4Hana a:hover {
+  color: rgb(10, 112, 134);
+}

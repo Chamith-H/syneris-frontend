@@ -52,6 +52,14 @@ export const Header = () => {
           </a>
           <a
             className={
+              route === "about" ? "active-route ms-4" : "deactive-route ms-4"
+            }
+            href="/about"
+          >
+            About Us
+          </a>
+          <a
+            className={
               route === "sap-business-one"
                 ? "active-route ms-4"
                 : "deactive-route ms-4"
@@ -87,14 +95,6 @@ export const Header = () => {
             href="/contact"
           >
             Contact Us
-          </a>
-          <a
-            className={
-              route === "about" ? "active-route ms-4" : "deactive-route ms-4"
-            }
-            href="/about"
-          >
-            About Us
           </a>
         </div>
       </div>
