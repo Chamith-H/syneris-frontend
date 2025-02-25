@@ -27,7 +27,7 @@ export const About = () => {
 
       <div className="About-Vission">
         <div className="row g-0">
-          <div className="col-6">
+          <div className="col-md-6">
             <div className="row">
               <div className="col-6 vision-title-back"></div>
               <div className="col-6 py-5">
@@ -36,7 +36,7 @@ export const About = () => {
             </div>
           </div>
 
-          <div className="col-6 d-flex flex-column justify-content-center pe-5 vision-des">
+          <div className="col-md-6 d-flex flex-column justify-content-center py-5 py-md-0 px-4 pe-md-5 vision-des">
             <h5>OUR VISION</h5>
             <p className="vis-p">
               To be the preferred partner for digital transformation and
@@ -47,14 +47,14 @@ export const About = () => {
       </div>
 
       <div className="About-Mission p-4 p-md-5">
-        <div className="row gx-5">
-          <div className="col-3 d-flex align-items-center vision-t">
-            <h5 className="mission-title">
-              OUR <br />
+        <div className="row gx-5 py-5 py-lg-0">
+          <div className="col-lg-3 d-flex align-items-center vision-t">
+            <h5 className="mission-title mb-4 mb-lg-0">
+              OUR <br className="d-none d-lg-block" />
               MISSION
             </h5>
           </div>
-          <div className="col-3 mission-card">
+          <div className="col-sm-6 col-lg-3 mission-card">
             <div className="mis-card-img">
               <img src={operation} alt="" />
             </div>
@@ -65,7 +65,7 @@ export const About = () => {
               operational efficiency.
             </p>
           </div>
-          <div className="col-3 mission-card">
+          <div className="col-sm-6 col-lg-3 mission-card">
             <div className="mis-card-img">
               <img src={growth} alt="" />
             </div>
@@ -76,7 +76,7 @@ export const About = () => {
               competitiveness
             </p>
           </div>
-          <div className="col-3 mission-card">
+          <div className="col-sm-6 col-lg-3 mission-card">
             <div className="mis-card-img">
               <img src={innovation} alt="" />
             </div>
@@ -92,7 +92,7 @@ export const About = () => {
 
       <div className="About-Vission">
         <div className="row g-0">
-          <div className="col-6">
+          <div className="col-md-6">
             <div className="row">
               <div className="col-6 vision-title-back"></div>
               <div className="col-6 py-5">
@@ -101,7 +101,7 @@ export const About = () => {
             </div>
           </div>
 
-          <div className="col-6 d-flex flex-column justify-content-center pe-5 vision-des">
+          <div className="col-md-6 d-flex flex-column justify-content-center px-4 pe-md-5 vision-des py-5">
             <h5>OUR VALUES</h5>
             <p className="mb-1 value-ps">
               <span>Innovation:</span>&nbsp;Constantly evolving with the lates

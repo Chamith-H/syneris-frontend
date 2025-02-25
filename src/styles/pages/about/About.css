@@ -73,6 +73,24 @@
   color: rgb(9, 101, 122);
 }
 
+@media (max-width: 767px) {
+  .vision-title-back {
+    background: linear-gradient(to bottom, rgb(9, 101, 122), #ffffff);
+  }
+
+  .mission-title {
+    font-family: "R2";
+    font-size: 25px;
+    color: rgb(9, 101, 122);
+  }
+
+  .vision-des h5 {
+    font-family: "R2";
+    font-size: 25px;
+    color: rgb(9, 101, 122);
+  }
+}
+
 .value-ps {
   font-family: "R4";
   color: black;
