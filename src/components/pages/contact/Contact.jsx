@@ -11,8 +11,22 @@ import wtsapp from "../../../assets/images/contact/wtsap.png";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet.gridlayer.googlemutant";
 import L from "leaflet";
+import { useState } from "react";
+import { Api } from "../../../Api";
+import { Loader } from "../../shared/Loader";
+import { ToastContainer, toast } from "react-toastify";
 
 export const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const [submitted, setSubmitted] = useState(false);
+
+  const [saving, setSaving] = useState(false);
+
   const lng = 79.8791;
   const lat = 6.94071;
 
@@ -23,6 +37,46 @@ export const Contact = () => {
     iconAnchor: [16, 32], // Center the icon
     popupAnchor: [0, -32], // Position the popup correctly
   });
+
+  const submitFormData = async (event) => {
+    event.preventDefault();
+
+    if (
+      formData.name === "" ||
+      formData.email === "" ||
+      formData.message === ""
+    ) {
+      return;
+    }
+
+    setSaving(true);
+
+    const api = new Api();
+
+    try {
+      const response = await api.contact(formData);
+
+      if (response) {
+        setSaving(false);
+        toast.success(response.data.message, {
+          style: {
+            fontFamily: "R4",
+            fontSize: "13px",
+            color: "green",
+          },
+        });
+      }
+    } catch (err) {
+      setSaving(false);
+      toast.error(err.response.data.message, {
+        style: {
+          fontFamily: "R4",
+          fontSize: "13px",
+          color: "red",
+        },
+      });
+    }
+  };
 
   return (
     <div className="Contact">
@@ -125,7 +179,7 @@ export const Contact = () => {
       </div>
 
       <div className="contact-m-form px-4 py-4 px-md-5 py-md-5">
-        <form action="" className="py-4">
+        <form onSubmit={submitFormData} className="py-4">
           <p className="mb-0 info-tag">GET IN TOUCH</p>
           <h3 className="con-des">SEND US A MESSAGE TODAY</h3>
           <div className="divBorder"></div>
@@ -133,14 +187,38 @@ export const Contact = () => {
             <div className="col-md-6">
               <div className="input-sec mt-2">
                 <label>Name</label>
-                <input type="text" placeholder="Enter your name" />
+                <input
+                  type="text"
+                  placeholder="Enter your name"
+                  value={formData.name}
+                  required={true}
+                  disabled={saving}
+                  onChange={(e) =>
+                    setFormData({ ...formData, name: e.target.value })
+                  }
+                />
+                {formData.name === "" && submitted && (
+                  <span className="form-error">* Name is required</span>
+                )}
               </div>
             </div>
 
             <div className="col-md-6">
               <div className="input-sec mt-2">
                 <label>Email</label>
-                <input type="text" placeholder="Enter your email" />
+                <input
+                  type="text"
+                  placeholder="Enter your email"
+                  value={formData.email}
+                  required={true}
+                  disabled={saving}
+                  onChange={(e) =>
+                    setFormData({ ...formData, email: e.target.value })
+                  }
+                />
+                {formData.email === "" && submitted && (
+                  <span className="form-error">* Email is required</span>
+                )}
               </div>
             </div>
           </div>
@@ -152,15 +230,38 @@ export const Contact = () => {
                 name=""
                 id=""
                 placeholder="Enter your message"
+                value={formData.message}
+                required={true}
+                disabled={saving}
+                onChange={(e) =>
+                  setFormData({ ...formData, message: e.target.value })
+                }
               ></textarea>
+              {formData.message === "" && submitted && (
+                <span className="form-error">* Message is required</span>
+              )}
             </div>
           </div>
 
           <div className="col-12 d-flex justify-content-end mt-3">
-            <button className="px-3">Send</button>
+            <button
+              onClick={() => setSubmitted(true)}
+              className="px-3"
+              type="submit"
+              disabled={saving}
+            >
+              {!saving && <span>Send</span>}
+              {saving && (
+                <div className="d-flex justify-content-center align-items-center">
+                  <Loader />
+                  <span className="ms-2">Sending</span>
+                </div>
+              )}
+            </button>
           </div>
         </form>
       </div>
+      <ToastContainer />
     </div>
   );
 };

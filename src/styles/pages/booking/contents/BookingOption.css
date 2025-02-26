@@ -203,6 +203,78 @@
   width: 450px;
 }
 
+.form-input-book {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input-book label {
+  font-size: 13px;
+  font-family: "R3";
+  color: #000000;
+}
+
+.time-button {
+  width: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(227, 227, 227);
+  background-color: #f5f5f5;
+  border-radius: 3px;
+  font-family: "R3";
+  font-size: 14px;
+}
+
+.time-button-selected {
+  width: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(9, 101, 122);
+  background-color: rgb(9, 101, 122);
+  border-radius: 3px;
+  font-family: "R3";
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.form-input-book input {
+  outline: none;
+  height: 37px;
+  border-style: solid;
+  border-radius: 3px;
+  border-width: 1px;
+  border-color: rgb(215, 215, 215);
+  padding-left: 10px;
+  font-family: "R3";
+}
+
+.button-book button {
+  border-style: none;
+  background-color: rgb(9, 101, 122);
+  font-family: "R3";
+  font-size: 13px;
+  height: 32px;
+  color: rgb(255, 255, 255);
+  border-radius: 3px;
+}
+
+.bookingDate {
+  font-family: "R3";
+  color: rgb(9, 101, 122);
+  font-size: 12px;
+}
+
+.modal-title-x {
+  font-family: "R2";
+  font-size: 18px;
+}
+
+.form-input-book input::placeholder {
+  font-family: "R4";
+  color: rgb(123, 123, 123);
+  font-size: 14px;
+}
+
 @media (max-width: 992px) {
   .side-img-book img {
     width: 200px;

@@ -1,14 +1,107 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import "../../../../styles/pages/booking/contents/BookingOption.css";
 import Calendar from "react-calendar";
 import bookingSide from "../../../../assets/images/booking/bookingSide.png";
+import { Loader } from "../../../shared/Loader";
+import moment from "moment-timezone";
+import { Api } from "../../../../Api";
 
 export const BookingOption = () => {
-  const [value, setValue] = useState(new Date());
+  const [value, setValue] = useState("");
+
+  const [formData, setFormData] = useState({
+    bookedDate: "",
+    name: "",
+    email: "",
+    phone: "",
+    timeZone: "",
+  });
+
+  const modalRef = useRef(null);
+
+  const definedTimes = [
+    { timeStr: "9.00 AM", time: "9.00" },
+    { timeStr: "9.30 AM", time: "9.30" },
+    { timeStr: "10.00 AM", time: "10.00" },
+    { timeStr: "10.30 AM", time: "10.30" },
+    { timeStr: "11.00 AM", time: "11.00" },
+    { timeStr: "11.30 AM", time: "11.30" },
+    { timeStr: "12.00 PM", time: "12.00" },
+    { timeStr: "12.30 PM", time: "12.30" },
+    { timeStr: "1.00 PM", time: "13.00" },
+    { timeStr: "1.30 PM", time: "13.30" },
+    { timeStr: "2.00 PM", time: "14.00" },
+    { timeStr: "2.30 PM", time: "14.30" },
+    { timeStr: "3.00 PM", time: "15.00" },
+    { timeStr: "3.30 PM", time: "15.30" },
+    { timeStr: "4.00 PM", time: "16.00" },
+  ];
+
+  const [timeSlots, setTimeSlots] = useState([]);
+
+  const [submitted, setSubmitted] = useState(false);
+
+  const [saving, setSaving] = useState(false);
+
+  useEffect(() => {
+    setTimeSlots(definedTimes);
+  }, []);
 
   const changeValue = (e) => {
-    console.log(e);
-    setValue(e);
+    const modal = new window.bootstrap.Modal(modalRef.current);
+    modal.show();
+
+    const currentTimeZone = moment.tz.guess();
+
+    setFormData({ ...formData, timeZone: currentTimeZone });
+
+    const selectedDate = moment(e);
+    const currentDate = selectedDate.tz(currentTimeZone).format("YYYY-MM-DD");
+
+    setValue(currentDate);
+  };
+
+  const submitFormData = async (event) => {
+    event.preventDefault();
+
+    if (
+      formData.name === "" ||
+      formData.email === "" ||
+      formData.message === "" ||
+      formData.bookedDate === ""
+    ) {
+      return;
+    }
+
+    console.log(formData);
+
+    // setSaving(true);
+
+    const api = new Api();
+
+    // try {
+    //   const response = await api.contact(formData);
+
+    //   if (response) {
+    //     setSaving(false);
+    //     toast.success(response.data.message, {
+    //       style: {
+    //         fontFamily: "R4",
+    //         fontSize: "13px",
+    //         color: "green",
+    //       },
+    //     });
+    //   }
+    // } catch (err) {
+    //   setSaving(false);
+    //   toast.error(err.response.data.message, {
+    //     style: {
+    //       fontFamily: "R4",
+    //       fontSize: "13px",
+    //       color: "red",
+    //     },
+    //   });
+    // }
   };
 
   return (
@@ -50,6 +143,132 @@ export const BookingOption = () => {
           <div className="col-lg-6  ps-md-4">
             <div className="side-img-book">
               <img src={bookingSide} alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="modal fade" ref={modalRef} tabIndex="-1">
+        <div className="modal-dialog">
+          <div className="modal-content">
+            <div className="modal-header d-flex align-items-center">
+              <div className="modal-title">
+                <h6 className="bookingDate mb-0">{value}</h6>
+                <h5 className="modal-title-x mt-0 mb-0">BOOK AN APPOINTMENT</h5>
+              </div>
+
+              <button
+                type="button"
+                className="btn-close"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+            <div className="modal-body">
+              <div className="form-book">
+                <form onSubmit={submitFormData}>
+                  <div className="form-input-book">
+                    <label htmlFor="">Select a Time</label>
+
+                    <div className="row gx-4 gy-2 mt-0">
+                      {timeSlots.map((slot) => (
+                        <div className="col-4">
+                          <button
+                            onClick={() =>
+                              setFormData({
+                                ...formData,
+                                bookedDate: slot.time,
+                              })
+                            }
+                            className={
+                              formData.bookedDate !== "" &&
+                              formData.bookedDate === slot.time
+                                ? "time-button-selected py-2"
+                                : "time-button py-2"
+                            }
+                            type="button"
+                          >
+                            {slot.timeStr}
+                          </button>
+                        </div>
+                      ))}
+                    </div>
+                    {formData.bookedDate === "" && submitted && (
+                      <span className="form-error">* Email is required</span>
+                    )}
+                  </div>
+
+                  <div className="form-input-book mt-3">
+                    <label htmlFor="">Full Name</label>
+                    <input
+                      type="text"
+                      placeholder="Enter your name"
+                      value={formData.name}
+                      required={true}
+                      disabled={saving}
+                      onChange={(e) =>
+                        setFormData({ ...formData, name: e.target.value })
+                      }
+                    />
+                    {formData.name === "" && submitted && (
+                      <span className="form-error">* Name is required</span>
+                    )}
+                  </div>
+
+                  <div className="form-input-book mt-2">
+                    <label htmlFor="">Email</label>
+                    <input
+                      type="text"
+                      placeholder="Enter your email"
+                      value={formData.email}
+                      required={true}
+                      disabled={saving}
+                      onChange={(e) =>
+                        setFormData({ ...formData, email: e.target.value })
+                      }
+                    />
+                    {formData.email === "" && submitted && (
+                      <span className="form-error">* Email is required</span>
+                    )}
+                  </div>
+
+                  <div className="form-input-book mt-2">
+                    <label htmlFor="">Phone Number</label>
+                    <input
+                      type="text"
+                      placeholder="Enter your phone umber"
+                      value={formData.phone}
+                      required={true}
+                      disabled={saving}
+                      onChange={(e) =>
+                        setFormData({ ...formData, phone: e.target.value })
+                      }
+                    />
+
+                    {formData.phone === "" && submitted && (
+                      <span className="form-error">
+                        * Phone number is required
+                      </span>
+                    )}
+                  </div>
+
+                  <div className="d-flex justify-content-end align-items-center button-book mt-2">
+                    <button
+                      onClick={() => setSubmitted(true)}
+                      className="px-3"
+                      type="submit"
+                      disabled={saving}
+                    >
+                      {!saving && <span>Book Now</span>}
+                      {saving && (
+                        <div className="d-flex justify-content-center align-items-center">
+                          <Loader />
+                          <span className="ms-2">Booking</span>
+                        </div>
+                      )}
+                    </button>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
