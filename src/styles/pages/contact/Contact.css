@@ -85,7 +85,7 @@
 
 .input-sec input {
   outline: none;
-  height: 37px;
+  height: 40px;
   border-style: solid;
   border-radius: 3px;
   border-width: 1px;
@@ -123,7 +123,7 @@
   background-color: rgb(9, 101, 122);
   font-family: "R3";
   font-size: 14px;
-  height: 32px;
+  height: 40px;
   color: rgb(255, 255, 255);
   border-radius: 3px;
 }

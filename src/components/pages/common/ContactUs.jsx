@@ -161,7 +161,7 @@ export const ContactUs = () => {
               <div className="d-flex justify-content-end mt-3">
                 <button
                   onClick={() => setSubmitted(true)}
-                  className="px-3"
+                  className="px-4"
                   type="submit"
                   disabled={saving}
                 >

@@ -106,6 +106,7 @@ export const BookingOption = () => {
             fontSize: "13px",
             color: "green",
           },
+          autoClose: 40000,
         });
       }
     } catch (err) {
@@ -273,7 +274,7 @@ export const BookingOption = () => {
                   <div className="d-flex justify-content-end align-items-center button-book mt-2">
                     <button
                       onClick={() => setSubmitted(true)}
-                      className="px-3"
+                      className="px-4"
                       type="submit"
                       disabled={saving}
                     >
