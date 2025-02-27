@@ -6,15 +6,20 @@ import { Loader } from "../../../shared/Loader";
 import moment from "moment-timezone";
 import { Api } from "../../../../Api";
 import { ToastContainer, toast } from "react-toastify";
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
 
 export const BookingOption = () => {
   const [formData, setFormData] = useState({
     bookedDate: "",
     bookedTime: "",
+    timeZone: "",
     name: "",
     email: "",
-    phone: "",
-    timeZone: "",
+    phone: "+94",
+    country: "",
+    company: "",
+    message: "",
   });
 
   const modalRef = useRef(null);
@@ -64,12 +69,15 @@ export const BookingOption = () => {
     const currentDate = selectedDate.tz(currentTimeZone).format("YYYY-MM-DD");
 
     setFormData({
+      bookedDate: currentDate,
+      timeZone: currentTimeZone,
       bookedTime: "",
       name: "",
       email: "",
-      phone: "",
-      timeZone: currentTimeZone,
-      bookedDate: currentDate,
+      phone: "+94",
+      country: "",
+      company: "",
+      message: "",
     });
   };
 
@@ -83,8 +91,8 @@ export const BookingOption = () => {
     if (
       formData.name === "" ||
       formData.email === "" ||
-      formData.message === "" ||
-      formData.bookedTime === ""
+      formData.bookedTime === "" ||
+      formData.company === ""
     ) {
       return;
     }
@@ -252,23 +260,74 @@ export const BookingOption = () => {
                   </div>
 
                   <div className="form-input-book mt-2">
-                    <label htmlFor="">Phone Number</label>
+                    <label>Company</label>
                     <input
+                      className="field-input"
                       type="text"
-                      placeholder="Enter your phone umber"
-                      value={formData.phone}
+                      placeholder="Enter company name"
+                      value={formData.company}
                       required={true}
                       disabled={saving}
                       onChange={(e) =>
-                        setFormData({ ...formData, phone: e.target.value })
+                        setFormData({ ...formData, company: e.target.value })
                       }
                     />
 
-                    {formData.phone === "" && submitted && (
-                      <span className="form-error">
-                        * Phone number is required
-                      </span>
+                    {formData.company === "" && submitted && (
+                      <span className="form-error">* Company is required</span>
                     )}
+                  </div>
+
+                  <div className="form-input-book mt-2">
+                    <label>Phone Number</label>
+
+                    <PhoneInput
+                      country={"lk"}
+                      value={formData.phone}
+                      containerStyle={{ outline: "none" }}
+                      disabled={saving}
+                      inputStyle={{
+                        width: "100%",
+                        outline: "none",
+                        boxShadow: "none",
+                        height: "40px",
+                        borderStyle: "solid",
+                        borderWidth: "1px",
+                        borderColor: "rgb(215, 215, 215)",
+                        borderRadius: "3px",
+                        fontFamily: "R3",
+                      }}
+                      buttonStyle={{
+                        borderStyle: "solid",
+                        borderWidth: "1px",
+                        borderColor: "rgb(215, 215, 215)",
+                        borderTopLeftRadius: "3px",
+                        borderBottomLeftRadius: "3px",
+                        borderRightColor: "rgb(211, 211, 211)",
+                      }}
+                      dropdownStyle={{}}
+                      onChange={(phone, country) =>
+                        setFormData({
+                          ...formData,
+                          phone: phone,
+                          country: country.name,
+                        })
+                      }
+                    />
+                  </div>
+
+                  <div className="form-input-book mt-2">
+                    <label>Message</label>
+                    <textarea
+                      name=""
+                      id=""
+                      placeholder="Enter your message"
+                      value={formData.message}
+                      disabled={saving}
+                      onChange={(e) =>
+                        setFormData({ ...formData, message: e.target.value })
+                      }
+                    ></textarea>
                   </div>
 
                   <div className="d-flex justify-content-end align-items-center button-book mt-2">

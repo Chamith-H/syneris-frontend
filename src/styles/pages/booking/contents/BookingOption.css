@@ -251,12 +251,26 @@
   color: #000000;
 }
 
+.form-input-book textarea {
+  outline: none;
+  height: 100px;
+  border-style: solid;
+  border-radius: 3px;
+  border-width: 1px;
+  border-color: rgb(215, 215, 215);
+  padding-left: 10px;
+  font-family: "R3";
+  font-size: 15px;
+  color: #000000;
+  padding-top: 8px;
+}
+
 .button-book button {
   border-style: none;
   background-color: rgb(9, 101, 122);
   font-family: "R3";
   font-size: 13px;
-  height: 40px;
+  height: 37px;
   color: rgb(255, 255, 255);
   border-radius: 3px;
 }
@@ -273,6 +287,12 @@
 }
 
 .form-input-book input::placeholder {
+  font-family: "R4";
+  color: rgb(123, 123, 123);
+  font-size: 14px;
+}
+
+.form-input-book textarea::placeholder {
   font-family: "R4";
   color: rgb(123, 123, 123);
   font-size: 14px;
