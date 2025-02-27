@@ -58,6 +58,16 @@ export const Contact = () => {
 
       if (response) {
         setSaving(false);
+
+        setFormData({
+          name: "",
+          email: "",
+          message: "",
+        });
+
+        setSubmitted(false);
+        setSaving(false);
+
         toast.success(response.data.message, {
           style: {
             fontFamily: "R4",
@@ -155,7 +165,7 @@ export const Contact = () => {
             </div>
           </div>
 
-          <div className="col-md-6 pt-md-3">
+          <div className="col-md-6 pt-md-3 position-relative">
             <div className="locationMap">
               <MapContainer
                 center={[lat, lng]}

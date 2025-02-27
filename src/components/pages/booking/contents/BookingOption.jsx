@@ -5,12 +5,12 @@ import bookingSide from "../../../../assets/images/booking/bookingSide.png";
 import { Loader } from "../../../shared/Loader";
 import moment from "moment-timezone";
 import { Api } from "../../../../Api";
+import { ToastContainer, toast } from "react-toastify";
 
 export const BookingOption = () => {
-  const [value, setValue] = useState("");
-
   const [formData, setFormData] = useState({
     bookedDate: "",
+    bookedTime: "",
     name: "",
     email: "",
     phone: "",
@@ -47,18 +47,34 @@ export const BookingOption = () => {
     setTimeSlots(definedTimes);
   }, []);
 
+  const [currentModal, setCurrentModal] = useState(null);
+
   const changeValue = (e) => {
     const modal = new window.bootstrap.Modal(modalRef.current);
     modal.show();
 
-    const currentTimeZone = moment.tz.guess();
+    setCurrentModal(modal);
 
-    setFormData({ ...formData, timeZone: currentTimeZone });
+    setSubmitted(false);
+    setSaving(false);
+
+    const currentTimeZone = moment.tz.guess();
 
     const selectedDate = moment(e);
     const currentDate = selectedDate.tz(currentTimeZone).format("YYYY-MM-DD");
 
-    setValue(currentDate);
+    setFormData({
+      bookedTime: "",
+      name: "",
+      email: "",
+      phone: "",
+      timeZone: currentTimeZone,
+      bookedDate: currentDate,
+    });
+  };
+
+  const hidePopup = () => {
+    currentModal.hide();
   };
 
   const submitFormData = async (event) => {
@@ -68,40 +84,40 @@ export const BookingOption = () => {
       formData.name === "" ||
       formData.email === "" ||
       formData.message === "" ||
-      formData.bookedDate === ""
+      formData.bookedTime === ""
     ) {
       return;
     }
 
-    console.log(formData);
-
-    // setSaving(true);
+    setSaving(true);
 
     const api = new Api();
 
-    // try {
-    //   const response = await api.contact(formData);
+    try {
+      const response = await api.appointment(formData);
 
-    //   if (response) {
-    //     setSaving(false);
-    //     toast.success(response.data.message, {
-    //       style: {
-    //         fontFamily: "R4",
-    //         fontSize: "13px",
-    //         color: "green",
-    //       },
-    //     });
-    //   }
-    // } catch (err) {
-    //   setSaving(false);
-    //   toast.error(err.response.data.message, {
-    //     style: {
-    //       fontFamily: "R4",
-    //       fontSize: "13px",
-    //       color: "red",
-    //     },
-    //   });
-    // }
+      if (response) {
+        hidePopup();
+        setSaving(false);
+
+        toast.success(response.data.message, {
+          style: {
+            fontFamily: "R4",
+            fontSize: "13px",
+            color: "green",
+          },
+        });
+      }
+    } catch (err) {
+      setSaving(false);
+      toast.error(err.response.data.message, {
+        style: {
+          fontFamily: "R4",
+          fontSize: "13px",
+          color: "red",
+        },
+      });
+    }
   };
 
   return (
@@ -136,7 +152,10 @@ export const BookingOption = () => {
         <div className="row g-0 mt-5">
           <div className="col-12 col-lg-6 pb-5">
             <div className="pb-4 pe-4 pe-md-5 pe-lg-0">
-              <Calendar onChange={(e) => changeValue(e)} value={value} />
+              <Calendar
+                onChange={(e) => changeValue(e)}
+                value={formData.bookedDate}
+              />
             </div>
           </div>
 
@@ -153,7 +172,7 @@ export const BookingOption = () => {
           <div className="modal-content">
             <div className="modal-header d-flex align-items-center">
               <div className="modal-title">
-                <h6 className="bookingDate mb-0">{value}</h6>
+                <h6 className="bookingDate mb-1">{formData.bookedDate}</h6>
                 <h5 className="modal-title-x mt-0 mb-0">BOOK AN APPOINTMENT</h5>
               </div>
 
@@ -176,12 +195,12 @@ export const BookingOption = () => {
                             onClick={() =>
                               setFormData({
                                 ...formData,
-                                bookedDate: slot.time,
+                                bookedTime: slot.time,
                               })
                             }
                             className={
-                              formData.bookedDate !== "" &&
-                              formData.bookedDate === slot.time
+                              formData.bookedTime !== "" &&
+                              formData.bookedTime === slot.time
                                 ? "time-button-selected py-2"
                                 : "time-button py-2"
                             }
@@ -192,7 +211,7 @@ export const BookingOption = () => {
                         </div>
                       ))}
                     </div>
-                    {formData.bookedDate === "" && submitted && (
+                    {formData.bookedTime === "" && submitted && (
                       <span className="form-error">* Email is required</span>
                     )}
                   </div>
@@ -273,6 +292,7 @@ export const BookingOption = () => {
           </div>
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 };

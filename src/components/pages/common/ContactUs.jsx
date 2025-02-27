@@ -36,6 +36,16 @@ export const ContactUs = () => {
 
       if (response) {
         setSaving(false);
+
+        setFormData({
+          name: "",
+          email: "",
+          message: "",
+        });
+
+        setSubmitted(false);
+        setSaving(false);
+
         toast.success(response.data.message, {
           style: {
             fontFamily: "R4",

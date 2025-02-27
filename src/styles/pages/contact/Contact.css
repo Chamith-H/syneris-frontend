@@ -89,7 +89,7 @@
   border-style: solid;
   border-radius: 3px;
   border-width: 1px;
-  border-color: rgb(215, 215, 215);
+  border-color: rgba(9, 101, 122, 0.185);
   padding-left: 10px;
   font-family: "R3";
 }
@@ -100,20 +100,21 @@
   border-style: solid;
   border-radius: 3px;
   border-width: 1px;
-  border-color: rgb(215, 215, 215);
+  border-color: rgba(9, 101, 122, 0.185);
   padding-left: 10px;
   font-family: "R3";
+  padding-top: 6px;
 }
 
 .input-sec input::placeholder {
   font-family: "R4";
-  color: rgb(159, 159, 159);
+  color: rgb(136, 136, 136);
   font-size: 14px;
 }
 
 .input-sec textarea::placeholder {
   font-family: "R4";
-  color: rgb(159, 159, 159);
+  color: rgb(136, 136, 136);
   font-size: 14px;
 }
 
@@ -136,6 +137,7 @@
 .locationMap {
   height: 100%;
   width: 100%;
+  z-index: 80;
 }
 
 .con-des {
