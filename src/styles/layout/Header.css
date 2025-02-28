@@ -106,5 +106,21 @@
   overflow: hidden;
   transition: height 0.4s ease-in-out;
   background-color: #096073;
-  box-shadow: 0px 5px 5px 0px #0000001f;
+  box-shadow: 0px 5px 5px 0px #00000033;
+}
+
+.expand-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
+.expand-back img {
+  width: 50%;
+  opacity: 70%;
 }

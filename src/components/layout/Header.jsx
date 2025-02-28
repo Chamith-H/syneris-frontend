@@ -1,6 +1,7 @@
 import "../../styles/layout/Header.css";
 import Logo from "../../assets/images/logos/synerisLogo.jpg";
 import { useState, useEffect, useRef } from "react";
+import expandBack from "../../assets/images/heroMobile/back1.png";
 
 export const Header = () => {
   const [route, setRoute] = useState("");
@@ -192,6 +193,10 @@ export const Header = () => {
           >
             Contact Us
           </a>
+        </div>
+
+        <div className="expand-back">
+          <img src={expandBack} alt="" />
         </div>
       </div>
     </div>
