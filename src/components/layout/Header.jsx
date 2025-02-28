@@ -120,14 +120,18 @@ export const Header = () => {
       <div className={isExpanded ? "Expanded" : "Collapsed"}>
         <div className="Desktop-Navigations-mobile px-4 py-4">
           <a
-            className={route === "" ? "active-route" : "deactive-route"}
+            className={
+              route === "" ? "active-route-m mt-3" : "deactive-route-m mt-3"
+            }
             href="/"
           >
             Home
           </a>
           <a
             className={
-              route === "booking" ? "active-route mt-3" : "deactive-route mt-3"
+              route === "booking"
+                ? "active-route-m mt-3"
+                : "deactive-route-m mt-3"
             }
             href="/booking"
           >
@@ -136,7 +140,9 @@ export const Header = () => {
 
           <a
             className={
-              route === "about" ? "active-route mt-3" : "deactive-route mt-3"
+              route === "about"
+                ? "active-route-m mt-3"
+                : "deactive-route-m mt-3"
             }
             href="/about"
           >
@@ -146,8 +152,8 @@ export const Header = () => {
           <a
             className={
               route === "sap-business-one"
-                ? "active-route mt-3"
-                : "deactive-route mt-3"
+                ? "active-route-m mt-3"
+                : "deactive-route-m mt-3"
             }
             href="/sap-business-one"
           >
@@ -157,8 +163,8 @@ export const Header = () => {
           <a
             className={
               route === "sap-s4-hana"
-                ? "active-route mt-3"
-                : "deactive-route mt-3"
+                ? "active-route-m mt-3"
+                : "deactive-route-m mt-3"
             }
             href="/sap-s4-hana"
           >
@@ -168,8 +174,8 @@ export const Header = () => {
           <a
             className={
               route === "industries"
-                ? "active-route mt-3"
-                : "deactive-route mt-3"
+                ? "active-route-m mt-3"
+                : "deactive-route-m mt-3"
             }
             href="/industries"
           >
@@ -178,7 +184,9 @@ export const Header = () => {
 
           <a
             className={
-              route === "contact" ? "active-route mt-3" : "deactive-route mt-3"
+              route === "contact"
+                ? "active-route-m mt-3"
+                : "deactive-route-m mt-3"
             }
             href="/contact"
           >
