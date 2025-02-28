@@ -1,0 +1,43 @@
+.BackLoader {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  z-index: 999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* HTML: <div class="loader-x"></div> */
+.loader-x {
+  width: 70px;
+  aspect-ratio: 1;
+  display: grid;
+  border: 4px solid #0000;
+  border-radius: 50%;
+  border-color: #0a6f8662 #0000;
+  animation: l16 1s infinite linear;
+}
+.loader-x::before,
+.loader-x::after {
+  content: "";
+  grid-area: 1/1;
+  margin: 5px;
+  border: inherit;
+  border-radius: 50%;
+}
+.loader-x::before {
+  border-color: #0a7086 #0000;
+  animation: inherit;
+  animation-duration: 0.5s;
+  animation-direction: reverse;
+}
+.loader-x::after {
+  margin: 14px;
+}
+@keyframes l16 {
+  100% {
+    transform: rotate(1turn);
+  }
+}
