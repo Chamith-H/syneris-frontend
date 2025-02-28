@@ -119,84 +119,90 @@ export const Header = () => {
       </div>
 
       <div className={isExpanded ? "Expanded" : "Collapsed"}>
-        <div className="Desktop-Navigations-mobile px-4 py-4">
-          <a
-            className={
-              route === "" ? "active-route-m mt-3" : "deactive-route-m mt-3"
-            }
-            href="/"
-          >
-            Home
-          </a>
-          <a
-            className={
-              route === "booking"
-                ? "active-route-m mt-3"
-                : "deactive-route-m mt-3"
-            }
-            href="/booking"
-          >
-            Booking
-          </a>
+        <div className="row">
+          <div className="col-6">
+            <div className="Desktop-Navigations-mobile px-4 py-4">
+              <a
+                className={
+                  route === "" ? "active-route-m mt-3" : "deactive-route-m mt-3"
+                }
+                href="/"
+              >
+                Home
+              </a>
+              <a
+                className={
+                  route === "booking"
+                    ? "active-route-m mt-3"
+                    : "deactive-route-m mt-3"
+                }
+                href="/booking"
+              >
+                Booking
+              </a>
 
-          <a
-            className={
-              route === "about"
-                ? "active-route-m mt-3"
-                : "deactive-route-m mt-3"
-            }
-            href="/about"
-          >
-            About Us
-          </a>
+              <a
+                className={
+                  route === "about"
+                    ? "active-route-m mt-3"
+                    : "deactive-route-m mt-3"
+                }
+                href="/about"
+              >
+                About Us
+              </a>
 
-          <a
-            className={
-              route === "sap-business-one"
-                ? "active-route-m mt-3"
-                : "deactive-route-m mt-3"
-            }
-            href="/sap-business-one"
-          >
-            SAP B-One
-          </a>
+              <a
+                className={
+                  route === "sap-business-one"
+                    ? "active-route-m mt-3"
+                    : "deactive-route-m mt-3"
+                }
+                href="/sap-business-one"
+              >
+                SAP B-One
+              </a>
 
-          <a
-            className={
-              route === "sap-s4-hana"
-                ? "active-route-m mt-3"
-                : "deactive-route-m mt-3"
-            }
-            href="/sap-s4-hana"
-          >
-            SAP S4 HANA
-          </a>
+              <a
+                className={
+                  route === "sap-s4-hana"
+                    ? "active-route-m mt-3"
+                    : "deactive-route-m mt-3"
+                }
+                href="/sap-s4-hana"
+              >
+                SAP S4 HANA
+              </a>
 
-          <a
-            className={
-              route === "industries"
-                ? "active-route-m mt-3"
-                : "deactive-route-m mt-3"
-            }
-            href="/industries"
-          >
-            Industries
-          </a>
+              <a
+                className={
+                  route === "industries"
+                    ? "active-route-m mt-3"
+                    : "deactive-route-m mt-3"
+                }
+                href="/industries"
+              >
+                Industries
+              </a>
 
-          <a
-            className={
-              route === "contact"
-                ? "active-route-m mt-3"
-                : "deactive-route-m mt-3"
-            }
-            href="/contact"
-          >
-            Contact Us
-          </a>
-        </div>
+              <a
+                className={
+                  route === "contact"
+                    ? "active-route-m mt-3"
+                    : "deactive-route-m mt-3"
+                }
+                href="/contact"
+              >
+                Contact Us
+              </a>
+            </div>
+          </div>
 
-        <div className="expand-back">
-          <img src={expandBack} alt="" />
+          <div className="col-6">
+            <div className="expand-back">
+              <img src={expandBack} alt="" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
