@@ -1,8 +1,5 @@
 import "../../../styles/pages/contact/Contact.css";
-import b1Logo from "../../../assets/images/home/sapB1.png";
 import sapCom from "../../../assets/images/contact/contactMan.png";
-import sapMobil from "../../../assets/images/sap/sapMobiBack.png";
-import whatsapp from "../../../assets/images/common/whats.png";
 import "../../../styles/pages/contact/Contact.css";
 
 import facebook from "../../../assets/images/contact/facebook.png";

@@ -1,7 +1,7 @@
 import "../../../styles/pages/businessOne/BusinessOne.css";
 import b1Logo from "../../../assets/images/home/sapB1.png";
-import sapCom from "../../../assets/images/sap/sapBack.png";
-import sapMobil from "../../../assets/images/sap/sapMobiBack.png";
+import sapCom from "../../../assets/images/sap/sapBack.webp";
+import sapMobil from "../../../assets/images/sap/sapMobiBack.webp";
 
 import operations from "../../../assets/images/sap/operations.gif";
 import cost from "../../../assets/images/sap/cost.gif";

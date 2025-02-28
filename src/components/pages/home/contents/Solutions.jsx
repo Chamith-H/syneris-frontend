@@ -1,8 +1,8 @@
 import "../../../../styles/pages/home/contents/Solutions.css";
-import erp from "../../../../assets/images/home/erp.png";
-import partners from "../../../../assets/images/home/partners.jpg";
-import development from "../../../../assets/images/home/development.jpg";
-import consulting from "../../../../assets/images/home/consulting.jpg";
+import erp from "../../../../assets/images/home/erp.webp";
+import partners from "../../../../assets/images/home/partners.webp";
+import development from "../../../../assets/images/home/development.webp";
+import consulting from "../../../../assets/images/home/consulting.webp";
 
 export const Solutions = () => {
   return (

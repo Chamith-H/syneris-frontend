@@ -61,7 +61,7 @@
 .contact-side-back-img-1 {
   height: 100%;
   width: 100%;
-  background-image: url(../../../assets/images/common/imgOne.jpg);
+  background-image: url(../../../assets/images/common/imgOne.webp);
   background-size: cover;
   background-position: top;
   border-top-left-radius: 4px;
@@ -71,7 +71,7 @@
 .contact-side-back-img-2 {
   height: 100%;
   width: 100%;
-  background-image: url(../../../assets/images/common/imgTwo.jpg);
+  background-image: url(../../../assets/images/common/imgTwo.webp);
   background-size: cover;
   background-position: top;
   border-top-left-radius: 4px;
@@ -81,7 +81,7 @@
 .contact-side-back-img-3 {
   height: 100%;
   width: 100%;
-  background-image: url(../../../assets/images/common/wtsappBack.jpg);
+  background-image: url(../../../assets/images/common/wtsappBack.webp);
   background-size: cover;
   background-position: top;
   border-top-left-radius: 4px;

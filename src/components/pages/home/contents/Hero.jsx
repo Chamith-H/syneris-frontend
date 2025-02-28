@@ -1,12 +1,6 @@
 import "../../../../styles/pages/home/contents/Hero.css";
-import heroImg from "../../../../assets/images/home/heroImg.jpg";
-import heroImgSmall from "../../../../assets/images/home/heroImgSmall.png";
-
 import hero2Img from "../../../../assets/images/home/hero2Img.png";
 import hero2ImgSmall from "../../../../assets/images/home/hero2ImgSmall.png";
-
-import hero3Img from "../../../../assets/images/home/hero3Img.png";
-import hero3ImgSmall from "../../../../assets/images/home/hero3ImgSmall.png";
 
 import { useEffect, useRef } from "react";
 

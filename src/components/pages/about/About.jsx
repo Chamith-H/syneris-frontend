@@ -2,8 +2,8 @@ import "../../../styles/pages/about/About.css";
 import operation from "../../../assets/images/about/process.gif";
 import growth from "../../../assets/images/about/growth.gif";
 import innovation from "../../../assets/images/about/idea.gif";
-import visionImg from "../../../assets/images/about/vision.jpg";
-import valueImg from "../../../assets/images/about/values.jpg";
+import visionImg from "../../../assets/images/about/vision.webp";
+import valueImg from "../../../assets/images/about/values.webp";
 
 export const About = () => {
   return (

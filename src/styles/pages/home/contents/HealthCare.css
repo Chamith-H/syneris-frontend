@@ -73,7 +73,7 @@
 }
 
 .third-col {
-  background-image: url(../../../../assets/images/home/healthcareSmall.jpg);
+  background-image: url(../../../../assets/images/home/healthcareSmall.webp);
   background-size: cover;
   border-radius: 5px;
 }
@@ -114,7 +114,7 @@
 }
 
 .Image-Col {
-  background-image: url(../../../../assets/images/home/healthCareMain.jpg);
+  background-image: url(../../../../assets/images/home/healthCareMain.webp);
   background-size: cover;
   background-position: center;
   height: 100%;

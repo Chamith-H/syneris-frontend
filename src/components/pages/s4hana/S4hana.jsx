@@ -1,7 +1,7 @@
 import "../../../styles/pages/s4hana/s4hana.css";
 import b1Logo from "../../../assets/images/home/sapS4.png";
-import sapCom from "../../../assets/images/sap/s4Back.png";
-import sapMobil from "../../../assets/images/sap/s4Mobi.png";
+import sapCom from "../../../assets/images/sap/s4Back.webp";
+import sapMobil from "../../../assets/images/sap/s4Mobi.webp";
 
 import practise from "../../../assets/images/sap/practise.gif";
 import innovation from "../../../assets/images/sap/innovation.gif";

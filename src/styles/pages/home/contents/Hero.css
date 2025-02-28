@@ -84,13 +84,13 @@
 
 .Hero-Content-Main-x {
   height: 500px;
-  background-image: url(../../../../assets/images/home/heroImg.jpg);
+  background-image: url(../../../../assets/images/home/heroImg.webp);
   background-size: cover;
 }
 
 .Hero-Content-Main-y {
   height: 500px;
-  background-image: url(../../../../assets/images/home/heroXt.jpg);
+  background-image: url(../../../../assets/images/home/heroXt.webp);
   background-size: cover;
   background-position: right;
 }
