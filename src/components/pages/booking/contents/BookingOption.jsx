@@ -221,7 +221,9 @@ export const BookingOption = () => {
                       ))}
                     </div>
                     {formData.bookedTime === "" && submitted && (
-                      <span className="form-error">* Email is required</span>
+                      <span className="form-error">
+                        * Booking time is required
+                      </span>
                     )}
                   </div>
 

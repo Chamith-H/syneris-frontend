@@ -26,10 +26,10 @@
 }
 
 .deactive-route {
-  font-family: "R3";
+  font-family: "R2";
   text-decoration: none;
   font-size: 14px;
-  color: rgb(104, 104, 104);
+  color: rgb(124, 124, 124);
 }
 
 .active-route {
@@ -37,6 +37,13 @@
   text-decoration: none;
   font-size: 14px;
   color: rgb(27, 171, 200);
+}
+
+.deactive-route:hover {
+  font-family: "R2";
+  text-decoration: none;
+  font-size: 14px;
+  color: rgba(122, 122, 122, 0.644);
 }
 
 .Toggle-button {

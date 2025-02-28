@@ -76,11 +76,32 @@
   color: rgba(157, 239, 255, 0.774);
 }
 
-.f-3 a {
+.deactive-route-f {
   text-decoration: none;
   font-family: "R4";
   color: rgba(255, 255, 255, 0.859);
-  font-size: 15px;
+  font-size: 14px;
+}
+
+.deactive-route-f:hover {
+  text-decoration: none;
+  font-family: "R4";
+  color: rgba(255, 255, 255, 0.445);
+  font-size: 14px;
+}
+
+.deactive-route-f:active {
+  text-decoration: none;
+  font-family: "R3";
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+}
+
+.active-route-f {
+  text-decoration: none;
+  font-family: "R2";
+  color: rgb(255, 255, 255);
+  font-size: 14px;
 }
 
 .footer-logo-back img {

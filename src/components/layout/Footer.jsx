@@ -2,8 +2,15 @@ import "../../styles/layout/Footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 import footerLogo from "../../assets/images/logos/synerisLogo.jpg";
+import { useState, useEffect } from "react";
 
 export const Footer = () => {
+  const [route, setRoute] = useState("");
+
+  useEffect(() => {
+    const path = window.location.pathname.substring(1);
+    setRoute(path);
+  }, []);
   return (
     <div className="Footer">
       <div className="row g-0 middle-footer py-5">
@@ -82,12 +89,72 @@ export const Footer = () => {
           <div className="d-flex flex-column py-4 f-3">
             <h6>Quick Links</h6>
 
-            <a href="">Home</a>
-            <a href="">Booking</a>
-            <a href="">ERP Solutions</a>
-            <a href="">Industries</a>
-            <a href="">Contact Us</a>
-            <a href="">About Us</a>
+            <a
+              className={route === "" ? "active-route-f" : "deactive-route-f"}
+              href="/"
+            >
+              Home
+            </a>
+            <a
+              className={
+                route === "booking"
+                  ? "active-route-f mb-1"
+                  : "deactive-route-f mb-1"
+              }
+              href="/booking"
+            >
+              Booking
+            </a>
+            <a
+              className={
+                route === "about"
+                  ? "active-route-f mb-1"
+                  : "deactive-route-f mb-1"
+              }
+              href="/about"
+            >
+              About Us
+            </a>
+            <a
+              className={
+                route === "sap-business-one"
+                  ? "active-route-f mb-1"
+                  : "deactive-route-f mb-1"
+              }
+              href="/sap-business-one"
+            >
+              SAP Business One
+            </a>
+            <a
+              className={
+                route === "sap-s4-hana"
+                  ? "active-route-f mb-1"
+                  : "deactive-route-f mb-1"
+              }
+              href="/sap-s4-hana"
+            >
+              SAP S/4 HANA
+            </a>
+            <a
+              className={
+                route === "industries"
+                  ? "active-route-f mb-1"
+                  : "deactive-route-f mb-1"
+              }
+              href="/industries"
+            >
+              Industries
+            </a>
+            <a
+              className={
+                route === "contact"
+                  ? "active-route-f mb-1"
+                  : "deactive-route-f mb-1"
+              }
+              href="/contact"
+            >
+              Contact Us
+            </a>
           </div>
         </div>
 

@@ -1,6 +1,5 @@
 import "../../styles/layout/Header.css";
 import Logo from "../../assets/images/logos/synerisLogo.jpg";
-import { ActionButton } from "../shared/ActionButton";
 import { useState, useEffect, useRef } from "react";
 
 export const Header = () => {
