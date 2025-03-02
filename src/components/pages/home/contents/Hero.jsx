@@ -79,6 +79,33 @@ export const Hero = () => {
             </div>
           </div>
           <div class="carousel-item">
+            <div className="Hero3">
+              <div className="row">
+                <div className="col-12 Hero-Content-Main-x">
+                  <div className="row g-0 h-100">
+                    <div className="col-12 col-md-6 h-100">
+                      <div className="px-4 px-md-5 py-5 d-flex flex-column justify-content-between h-100">
+                        <div className="mt-4">
+                          <h1 className="Hero3-Main-Title text-center text-md-start">
+                            SMART <span>SOLUTIONS</span> FOR A DIGITAL FUTURE
+                          </h1>
+
+                          <p className="Hero3-Sub-Title text-center text-md-start">
+                            Stay ahead of the competition with innovative IT
+                            strategies
+                          </p>
+                        </div>
+
+                        <HeroSocial />
+                      </div>
+                    </div>
+                    <div className="d-none d-md-block col-md-6"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
             <div className="Hero">
               <div className="row g-0">
                 <div className="col-12 Hero-Content-Main-y">
@@ -94,33 +121,6 @@ export const Hero = () => {
                           <p className="Hero-Sub-Title text-center text-md-start">
                             Take your business to the next level with expert IT
                             solutions
-                          </p>
-                        </div>
-
-                        <HeroSocial />
-                      </div>
-                    </div>
-                    <div className="d-none d-md-block col-md-6"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div className="Hero3">
-              <div className="row">
-                <div className="col-12 Hero-Content-Main-x">
-                  <div className="row g-0 h-100">
-                    <div className="col-12 col-md-6 h-100">
-                      <div className="px-4 px-md-5 py-5 d-flex flex-column justify-content-between h-100">
-                        <div className="mt-4">
-                          <h1 className="Hero3-Main-Title text-center text-md-start">
-                            SMART <span>SOLUTIONS</span> FOR A DIGITAL FUTURE
-                          </h1>
-
-                          <p className="Hero3-Sub-Title text-center text-md-start">
-                            Stay ahead of the competition with innovative IT
-                            strategies
                           </p>
                         </div>
 
