@@ -30,3 +30,15 @@
 .SapBOne a:hover {
   color: rgb(10, 112, 134);
 }
+
+.b1ImgHome {
+  width: 350px;
+  border-radius: 4px;
+}
+
+@media (max-width: 767px) {
+  .b1ImgHome {
+    width: 100%;
+    border-radius: 4px;
+  }
+}
