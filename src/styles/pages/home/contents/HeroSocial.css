@@ -1,0 +1,22 @@
+.Icon-Rounder-header {
+  height: 36px;
+  width: 36px;
+  border-radius: 100%;
+  background-color: rgb(12, 140, 167);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(231, 244, 246);
+  position: relative;
+  z-index: 300;
+}
+
+.Icon-Rounder-header i {
+  color: rgb(255, 255, 255);
+}
+
+.Icon-Rounder-header:hover {
+  background-color: rgb(9, 80, 94);
+}

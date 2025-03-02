@@ -3,6 +3,7 @@ import hero2Img from "../../../../assets/images/home/hero2Img.png";
 import hero2ImgSmall from "../../../../assets/images/home/hero2ImgSmall.png";
 
 import { useEffect, useRef } from "react";
+import { HeroSocial } from "./HeroSocial";
 
 export const Hero = () => {
   const intervalRef = useRef(null);
@@ -30,7 +31,7 @@ export const Hero = () => {
         const carousel = new window.bootstrap.Carousel(carouselElement);
         carousel.next();
       }
-    }, 3000);
+    }, 4000);
   };
 
   return (
@@ -71,23 +72,7 @@ export const Hero = () => {
                           </p>
                         </div>
 
-                        <div className="d-flex justify-content-center justify-content-md-start">
-                          <div className="Icon-Rounder-header me-2">
-                            <i class="bi bi-facebook"></i>
-                          </div>
-
-                          <div className="Icon-Rounder-header me-2">
-                            <i class="bi bi-linkedin"></i>
-                          </div>
-
-                          <div className="Icon-Rounder-header me-2">
-                            <i class="bi bi-envelope-at-fill"></i>
-                          </div>
-
-                          <div className="Icon-Rounder-header">
-                            <i class="bi bi-whatsapp"></i>
-                          </div>
-                        </div>
+                        <HeroSocial />
                       </div>
                     </div>
                     <div className="d-none d-md-block col-md-6"></div>
@@ -115,23 +100,7 @@ export const Hero = () => {
                           </p>
                         </div>
 
-                        <div className="d-flex justify-content-center justify-content-md-start">
-                          <div className="Icon-Rounder-header me-2">
-                            <i class="bi bi-facebook"></i>
-                          </div>
-
-                          <div className="Icon-Rounder-header me-2">
-                            <i class="bi bi-linkedin"></i>
-                          </div>
-
-                          <div className="Icon-Rounder-header me-2">
-                            <i class="bi bi-envelope-at-fill"></i>
-                          </div>
-
-                          <div className="Icon-Rounder-header">
-                            <i class="bi bi-whatsapp"></i>
-                          </div>
-                        </div>
+                        <HeroSocial />
                       </div>
                     </div>
                     <div className="d-none d-md-block col-md-6"></div>
@@ -158,23 +127,7 @@ export const Hero = () => {
                           </p>
                         </div>
 
-                        <div className="d-flex justify-content-center justify-content-md-start">
-                          <div className="Icon-Rounder-header me-2">
-                            <i class="bi bi-facebook"></i>
-                          </div>
-
-                          <div className="Icon-Rounder-header me-2">
-                            <i class="bi bi-linkedin"></i>
-                          </div>
-
-                          <div className="Icon-Rounder-header me-2">
-                            <i class="bi bi-envelope-at-fill"></i>
-                          </div>
-
-                          <div className="Icon-Rounder-header">
-                            <i class="bi bi-whatsapp"></i>
-                          </div>
-                        </div>
+                        <HeroSocial />
                       </div>
                     </div>
                     <div className="d-none d-md-block col-md-6"></div>
