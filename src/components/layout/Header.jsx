@@ -160,7 +160,7 @@ export const Header = () => {
                 }
                 href="/sap-business-one"
               >
-                SAP B-One
+                SAP Business One
               </a>
 
               <a
@@ -171,7 +171,7 @@ export const Header = () => {
                 }
                 href="/sap-s4-hana"
               >
-                SAP S4 HANA
+                SAP S/4 HANA
               </a>
 
               <a
