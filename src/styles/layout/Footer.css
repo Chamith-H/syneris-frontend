@@ -164,20 +164,20 @@
   height: 175px;
   background-image: url(../../assets/images/sap/sapBack.webp);
   background-size: cover;
-  border-radius: 4px;
+  border-radius: 0px;
   border-style: solid;
   border-width: 1px;
-  border-color: rgb(154, 219, 234);
+  border-color: rgb(98, 160, 174);
 }
 
 .f-image-erp-2 {
   height: 175px;
   background-image: url(../../assets/images/sap/s4Back.webp);
   background-size: cover;
-  border-radius: 3px;
+  border-radius: 0px;
   border-style: solid;
   border-width: 1px;
-  border-color: rgb(154, 219, 234);
+  border-color: rgb(98, 160, 174);
 }
 
 .back-footer-align {
@@ -198,6 +198,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom-right-radius: 3px;
-  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
 }
