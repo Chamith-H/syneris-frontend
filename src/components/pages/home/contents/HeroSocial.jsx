@@ -18,12 +18,6 @@ export const HeroSocial = () => {
         </div>
       </a>
 
-      <a href="mailto:info@syneris.solutions" target="_blank">
-        <div className="Icon-Rounder-header me-2">
-          <i class="bi bi-envelope-at-fill"></i>
-        </div>
-      </a>
-
       <a
         href="https://api.whatsapp.com/send/?phone=%2B94772268415&text&app_absent=0"
         target="_blank"

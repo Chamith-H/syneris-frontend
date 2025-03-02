@@ -36,7 +36,7 @@ export const HealthCare = () => {
                     </p>
                   </div>
 
-                  <a href="/booking">
+                  <a href="/booking" className="mt-3">
                     See More <span>&#8594;</span>
                   </a>
                 </div>

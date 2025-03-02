@@ -31,17 +31,21 @@ export const Footer = () => {
                   <i class="bi bi-facebook"></i>
                 </div>
 
-                <div className="Icon-Rounder-footer me-2">
+                <a
+                  href="https://www.linkedin.com/company/105643401/admin/dashboard/"
+                  target="_blank"
+                  className="Icon-Rounder-footer me-2"
+                >
                   <i class="bi bi-linkedin"></i>
-                </div>
+                </a>
 
-                <div className="Icon-Rounder-footer me-2">
-                  <i class="bi bi-envelope-at-fill"></i>
-                </div>
-
-                <div className="Icon-Rounder-footer">
+                <a
+                  href="https://api.whatsapp.com/send/?phone=%2B94772268415&text&app_absent=0"
+                  target="_blank"
+                  className="Icon-Rounder-footer"
+                >
                   <i class="bi bi-whatsapp"></i>
-                </div>
+                </a>
               </div>
             </div>
           </div>

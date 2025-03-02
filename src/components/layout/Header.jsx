@@ -29,7 +29,9 @@ export const Header = () => {
   return (
     <div className="Header px-4 px-md-5" ref={ref}>
       <div className="Header-Logo">
-        <img src="/assets/images/logos/synerisLogo.jpg" alt="syneris-logo" />
+        <a href="">
+          <img src="/assets/images/logos/synerisLogo.jpg" alt="syneris-logo" />
+        </a>
       </div>
 
       <div className="d-none d-lg-block">

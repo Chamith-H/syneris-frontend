@@ -11,7 +11,7 @@
 .Hero-Sub-Title {
   font-family: "R4";
   color: rgb(0, 0, 0);
-  text-shadow: 1px 1px 2px rgb(231, 240, 242);
+  text-shadow: 1px 1px 1px rgb(231, 240, 242);
 }
 
 .Hero2-Main-Title {
@@ -22,7 +22,7 @@
 
 .Hero2-Sub-Title {
   font-family: "R4";
-  color: rgba(255, 255, 255, 0.778);
+  color: rgba(255, 255, 255, 0.938);
   text-shadow: 1px 1px 2px rgb(10, 112, 134);
 }
 
@@ -39,7 +39,7 @@
 
 .Hero3-Sub-Title {
   font-family: "R4";
-  color: #ffffffcc;
+  color: #ffffffe1;
   text-shadow: 1px 1px 2px rgb(2, 50, 63);
 }
 
@@ -76,4 +76,13 @@
   background-image: url(/assets/images/home/heroXt.webp);
   background-size: cover;
   background-position: right;
+}
+
+@media (max-width: 767px) {
+  .Hero-Content-Main-x {
+    height: 500px;
+    background-image: url(/assets/images/home/heroImg.webp);
+    background-size: cover;
+    background-position: center;
+  }
 }

@@ -12,11 +12,13 @@
 
 .Header-Logo img {
   height: 45px;
+  margin-left: -2px;
 }
 
 @media (max-width: 577px) {
   .Header-Logo img {
     height: 38px;
+    margin-left: -2px;
   }
 }
 
@@ -69,12 +71,16 @@
 
 .Toggle-button {
   border-style: none;
-  background-color: rgba(0, 255, 255, 0);
-  color: rgb(10, 112, 134);
-  font-size: 36px;
+  background-color: rgba(10, 111, 134, 0);
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-right: -9px;
+}
+
+.Toggle-button i {
+  font-size: 34px;
+  color: rgb(10, 112, 134);
 }
 
 .rotate-180 {
