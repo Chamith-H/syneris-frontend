@@ -12,7 +12,7 @@ export const Hero = () => {
         const carousel = new window.bootstrap.Carousel(carouselElement);
         carousel.next();
       }
-    }, 3000);
+    }, 4000);
 
     return () => clearInterval(intervalRef.current);
   }, []);
