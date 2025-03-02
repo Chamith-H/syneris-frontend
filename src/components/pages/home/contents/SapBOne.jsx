@@ -12,7 +12,7 @@ export const SAPBOne = () => {
         </h3>
 
         <div className="d-lg-flex mt-4 pt-2">
-          <div className="d-flex justify-content-center justify-cotent-lg-start">
+          <div className="d-flex justify-content-center align-items-start justify-cotent-lg-start">
             <img src={b1Img} className="b1ImgHome" alt="" />
           </div>
 
