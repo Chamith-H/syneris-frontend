@@ -1,9 +1,4 @@
 import "../../../styles/pages/about/About.css";
-import operation from "../../../assets/images/about/process.gif";
-import growth from "../../../assets/images/about/growth.gif";
-import innovation from "../../../assets/images/about/idea.gif";
-import visionImg from "../../../assets/images/about/vision.webp";
-import valueImg from "../../../assets/images/about/values.webp";
 
 export const About = () => {
   return (
@@ -31,7 +26,11 @@ export const About = () => {
             <div className="row">
               <div className="col-6 vision-title-back"></div>
               <div className="col-6 py-5">
-                <img className="vision-side-img my-4" src={visionImg} alt="" />
+                <img
+                  className="vision-side-img my-4"
+                  src="/assets/images/about/vision.webp"
+                  alt=""
+                />
               </div>
             </div>
           </div>
@@ -56,7 +55,7 @@ export const About = () => {
           </div>
           <div className="col-sm-6 col-lg-3 mission-card">
             <div className="mis-card-img">
-              <img src={operation} alt="" />
+              <img src="/assets/images/about/process.gif" alt="" />
             </div>
 
             <h6 className="mt-2">Streamlining Operations</h6>
@@ -67,7 +66,7 @@ export const About = () => {
           </div>
           <div className="col-sm-6 col-lg-3 mission-card">
             <div className="mis-card-img">
-              <img src={growth} alt="" />
+              <img src="/assets/images/about/growth.gif" alt="" />
             </div>
 
             <h6 className="mt-2">Driving Strategic Growth</h6>
@@ -78,7 +77,7 @@ export const About = () => {
           </div>
           <div className="col-sm-6 col-lg-3 mission-card">
             <div className="mis-card-img">
-              <img src={innovation} alt="" />
+              <img src="/assets/images/about/idea.gif" alt="" />
             </div>
 
             <h6 className="mt-2">Inspiring Innovation</h6>
@@ -96,7 +95,11 @@ export const About = () => {
             <div className="row">
               <div className="col-6 vision-title-back"></div>
               <div className="col-6 py-5">
-                <img className="vision-side-img my-4" src={valueImg} alt="" />
+                <img
+                  className="vision-side-img my-4"
+                  src="/assets/images/about/values.webp"
+                  alt=""
+                />
               </div>
             </div>
           </div>
