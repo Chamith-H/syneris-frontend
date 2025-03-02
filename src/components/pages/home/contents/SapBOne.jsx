@@ -4,7 +4,7 @@ import b1Img from "../../../../assets/images/sap/b1Home.png";
 
 export const SAPBOne = () => {
   return (
-    <div className="SapBOne px-4 pt-4 px-md-5 pt-md-5">
+    <div className="SapBOne px-4 py-4 px-md-5 pt-md-5 py-md-0">
       <div className="py-4">
         <p className="mb-0 info-tag">SAP BUSINESS ONE</p>
         <h3 className="main-t-all">
@@ -16,7 +16,7 @@ export const SAPBOne = () => {
             <img src={b1Img} className="b1ImgHome" alt="" />
           </div>
 
-          <div className="ps-lg-5 mt-4 mt-lg-0">
+          <div className="ps-lg-5 mt-5 mt-lg-0">
             <div className="ps-lg-5">
               <p className="sap-description">
                 SAP Business One is a comprehensive, integrated ERP solution

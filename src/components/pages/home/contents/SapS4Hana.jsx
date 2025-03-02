@@ -14,7 +14,7 @@ export const SapS4Hana = () => {
             <img src={b1Img} className="s4ImgHome" alt="" />
           </div>
 
-          <div className="ps-lg-5 mt-4 mt-lg-0">
+          <div className="ps-lg-5 mt-5 mt-lg-0">
             <div className="ps-lg-5">
               <p className="sap-description">
                 SAP S/4HANA is an intelligent, next-generation ERP suite
