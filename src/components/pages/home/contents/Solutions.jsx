@@ -1,8 +1,4 @@
 import "../../../../styles/pages/home/contents/Solutions.css";
-import erp from "../../../../assets/images/home/erp.webp";
-import partners from "../../../../assets/images/home/partners.webp";
-import development from "../../../../assets/images/home/development.webp";
-import consulting from "../../../../assets/images/home/consulting.webp";
 
 export const Solutions = () => {
   return (
@@ -15,7 +11,10 @@ export const Solutions = () => {
           <div className="col-12 col-sm-6 col-lg-3">
             <div className="Solution-Card">
               <div className="Solution-Card-Img">
-                <img src={consulting} alt="erp-image" />
+                <img
+                  src="/assets/images/home/consulting.webp"
+                  alt="erp-image"
+                />
               </div>
               <div className="px-3 pt-3">
                 <h6>IT Consulting & Strategy</h6>
@@ -31,7 +30,7 @@ export const Solutions = () => {
           <div className="col-12 col-sm-6 col-lg-3">
             <div className="Solution-Card">
               <div className="Solution-Card-Img">
-                <img src={erp} alt="erp-image" />
+                <img src="/assets/images/home/erp.webp" alt="erp-image" />
               </div>
 
               <div className="px-3 pt-3">
@@ -48,7 +47,10 @@ export const Solutions = () => {
           <div className="col-12 col-sm-6 col-lg-3">
             <div className="Solution-Card">
               <div className="Solution-Card-Img">
-                <img src={development} alt="erp-image" />
+                <img
+                  src="/assets/images/home/development.webp"
+                  alt="erp-image"
+                />
               </div>
 
               <div className="px-3 pt-3">
@@ -65,7 +67,7 @@ export const Solutions = () => {
           <div className="col-12 col-sm-6 col-lg-3">
             <div className="Solution-Card">
               <div className="Solution-Card-Img">
-                <img src={partners} alt="erp-image" />
+                <img src="/assets/images/home/partners.webp" alt="erp-image" />
               </div>
 
               <div className="px-3 pt-3">

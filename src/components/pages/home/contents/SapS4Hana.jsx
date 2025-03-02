@@ -1,6 +1,4 @@
 import "../../../../styles/pages/home/contents/SapS4Hana.css";
-import sapB1 from "../../../../assets/images/home/sapS4.png";
-import b1Img from "../../../../assets/images/sap/s4Home.png";
 
 export const SapS4Hana = () => {
   return (
@@ -11,7 +9,11 @@ export const SapS4Hana = () => {
 
         <div className="d-lg-flex mt-4 pt-2">
           <div className="d-flex justify-content-center align-items-start justify-cotent-lg-start">
-            <img src={b1Img} className="s4ImgHome" alt="" />
+            <img
+              src="/assets/images/sap/s4Home.png"
+              className="s4ImgHome"
+              alt=""
+            />
           </div>
 
           <div className="ps-lg-5 mt-5 mt-lg-0">
@@ -29,7 +31,11 @@ export const SapS4Hana = () => {
               </p>
 
               <div className="d-flex align-items-center">
-                <img className="b1Img" src={sapB1} alt="sapb1" />
+                <img
+                  className="b1Img"
+                  src="/assets/images/home/sapS4.png"
+                  alt="sapb1"
+                />
               </div>
             </div>
 

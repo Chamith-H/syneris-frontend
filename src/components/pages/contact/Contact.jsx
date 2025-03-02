@@ -1,10 +1,5 @@
 import "../../../styles/pages/contact/Contact.css";
-import sapCom from "../../../assets/images/contact/contactMan.png";
 import "../../../styles/pages/contact/Contact.css";
-
-import facebook from "../../../assets/images/contact/facebook.png";
-import linkedin from "../../../assets/images/contact/linkedin.png";
-import wtsapp from "../../../assets/images/contact/wtsap.png";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet.gridlayer.googlemutant";
 import L from "leaflet";
@@ -112,7 +107,11 @@ export const Contact = () => {
             </div>
 
             <div className="d-flex justify-content-end align-items-end pt-lg-5">
-              <img className="contact-img" src={sapCom} alt="" />
+              <img
+                className="contact-img"
+                src="/assets/images/contact/contactMan.png"
+                alt=""
+              />
             </div>
           </div>
         </div>
@@ -152,9 +151,9 @@ export const Contact = () => {
                   <h6>Social Media</h6>
 
                   <div className="d-flex s-images">
-                    <img src={facebook} alt="" />
-                    <img src={linkedin} alt="" />
-                    <img src={wtsapp} alt="" />
+                    <img src="/assets/images/contact/facebook.png" alt="" />
+                    <img src="/assets/images/contact/linkedin.png" alt="" />
+                    <img src="/assets/images/contact/wtsap.png" alt="" />
                   </div>
                 </div>
               </div>

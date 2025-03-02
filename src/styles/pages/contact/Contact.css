@@ -1,5 +1,5 @@
 .ContactIntro {
-  background-image: url(../../../assets/images/contact/contactBack.webp);
+  background-image: url(/assets/images/contact/contactBack.webp);
   background-size: cover;
   background-position: center;
 }

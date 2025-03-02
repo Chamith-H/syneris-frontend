@@ -1,13 +1,4 @@
 import "../../../styles/pages/businessOne/BusinessOne.css";
-import b1Logo from "../../../assets/images/home/sapB1.png";
-import sapCom from "../../../assets/images/sap/sapBack.webp";
-import sapMobil from "../../../assets/images/sap/sapMobiBack.webp";
-
-import operations from "../../../assets/images/sap/operations.gif";
-import cost from "../../../assets/images/sap/cost.gif";
-import realtime from "../../../assets/images/sap/realTime.gif";
-import scalability from "../../../assets/images/sap/scalability.gif";
-import tools from "../../../assets/images/sap/tools.gif";
 
 export const BusinessOne = () => {
   return (
@@ -26,16 +17,28 @@ export const BusinessOne = () => {
                   SAP Business One provides the tools you need to take your
                   business to the next level
                 </p>
-                <img className="b1Logo-Sub mt-4" src={b1Logo} alt="sap-b1" />
+                <img
+                  className="b1Logo-Sub mt-4"
+                  src="/assets/images/home/sapB1.png"
+                  alt="sap-b1"
+                />
               </div>
             </div>
 
             <div className="d-flex d-lg-none w-100 justify-content-center">
-              <img className="sap-mobi-img" src={sapMobil} alt="" />
+              <img
+                className="sap-mobi-img"
+                src="/assets/images/sap/sapMobiBack.webp"
+                alt=""
+              />
             </div>
 
             <div className="d-lg-flex justify-content-end align-items-end pt-lg-5 d-none ">
-              <img className="sap-com-img" src={sapCom} alt="" />
+              <img
+                className="sap-com-img"
+                src="/assets/images/sap/sapBack.webp"
+                alt=""
+              />
             </div>
           </div>
         </div>
@@ -46,7 +49,7 @@ export const BusinessOne = () => {
           <div className="col-12 col-sm-6">
             <div className="Ind-Card">
               <div className="Ind-Img">
-                <img src={operations} alt="" />
+                <img src="/assets/images/sap/operations.gif" alt="" />
               </div>
 
               <h6 className="ind-head">Streamlined Operations</h6>
@@ -63,7 +66,7 @@ export const BusinessOne = () => {
           <div className="col-12 col-sm-6">
             <div className="Ind-Card">
               <div className="Ind-Img">
-                <img src={realtime} alt="" />
+                <img src="/assets/images/sap/realTime.gif" alt="" />
               </div>
 
               <h6 className="ind-head">Real-Time Insights</h6>
@@ -79,7 +82,7 @@ export const BusinessOne = () => {
           <div className="col-12 col-sm-6">
             <div className="Ind-Card">
               <div className="Ind-Img">
-                <img src={scalability} alt="" />
+                <img src="/assets/images/sap/scalability.gif" alt="" />
               </div>
 
               <h6 className="ind-head">Scalability and Flexibility</h6>
@@ -95,7 +98,7 @@ export const BusinessOne = () => {
           <div className="col-12 col-sm-6">
             <div className="Ind-Card">
               <div className="Ind-Img">
-                <img src={cost} alt="" />
+                <img src="/assets/images/sap/cost.gif" alt="" />
               </div>
 
               <h6 className="ind-head">Cost Efficiency</h6>
@@ -111,7 +114,7 @@ export const BusinessOne = () => {
           <div className="col-12 col-sm-6">
             <div className="Ind-Card">
               <div className="Ind-Img">
-                <img src={tools} alt="" />
+                <img src="/assets/images/sap/tools.gif" alt="" />
               </div>
 
               <h6 className="ind-head mb-0">Integration with Key Tools</h6>

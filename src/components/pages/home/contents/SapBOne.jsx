@@ -1,6 +1,4 @@
 import "../../../../styles/pages/home/contents/SapBOne.css";
-import sapB1 from "../../../../assets/images/home/sapB1.png";
-import b1Img from "../../../../assets/images/sap/b1Home.png";
 
 export const SAPBOne = () => {
   return (
@@ -13,7 +11,11 @@ export const SAPBOne = () => {
 
         <div className="d-lg-flex mt-4 pt-2">
           <div className="d-flex justify-content-center align-items-start justify-cotent-lg-start">
-            <img src={b1Img} className="b1ImgHome" alt="" />
+            <img
+              src="/assets/images/sap/b1Home.png"
+              className="b1ImgHome"
+              alt=""
+            />
           </div>
 
           <div className="ps-lg-5 mt-5 mt-lg-0">
@@ -28,7 +30,11 @@ export const SAPBOne = () => {
               </p>
 
               <div className="d-flex align-items-center">
-                <img className="b1Img" src={sapB1} alt="sapb1" />
+                <img
+                  className="b1Img"
+                  src="/assets/images/home/sapB1.png"
+                  alt="sapb1"
+                />
               </div>
             </div>
 

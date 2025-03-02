@@ -1,10 +1,7 @@
 import "../../styles/layout/Footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
-import footerLogo from "../../assets/images/logos/synerisLogo.jpg";
 import { useState, useEffect } from "react";
-import b1Logo from "../../assets/images/home/sapB1.png";
-import s4Logo from "../../assets/images/home/sapS4.png";
 
 export const Footer = () => {
   const [route, setRoute] = useState("");
@@ -20,7 +17,7 @@ export const Footer = () => {
           <div className="d-flex flex-column py-4 h-100">
             <h6>Syneris Solutions (Pvt) Ltd</h6>
             <div className="footer-logo-back">
-              <img src={footerLogo} alt="" />
+              <img src="/assets/images/logos/synerisLogo.jpg" alt="" />
             </div>
 
             <div className="d-flex flex-column justify-content-between h-100 mt-2">
@@ -169,7 +166,7 @@ export const Footer = () => {
                 <div className="f-image-erp-1">
                   <div className="back-footer-align">
                     <div className="footer-erp">
-                      <img src={b1Logo} alt="" />
+                      <img src="/assets/images/home/sapB1.png" alt="" />
                     </div>
                   </div>
                 </div>
@@ -178,7 +175,7 @@ export const Footer = () => {
                 <div className="f-image-erp-2">
                   <div className="back-footer-align">
                     <div className="footer-erp">
-                      <img src={s4Logo} alt="" />
+                      <img src="/assets/images/home/sapS4.png" alt="" />
                     </div>
                   </div>
                 </div>

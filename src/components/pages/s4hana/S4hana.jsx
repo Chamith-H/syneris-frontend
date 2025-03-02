@@ -1,14 +1,4 @@
 import "../../../styles/pages/s4hana/s4hana.css";
-import b1Logo from "../../../assets/images/home/sapS4.png";
-import sapCom from "../../../assets/images/sap/s4Back.webp";
-import sapMobil from "../../../assets/images/sap/s4Mobi.webp";
-
-import practise from "../../../assets/images/sap/practise.gif";
-import innovation from "../../../assets/images/sap/innovation.gif";
-import fast from "../../../assets/images/sap/fast.gif";
-import update from "../../../assets/images/sap/update.gif";
-import security from "../../../assets/images/sap/security.gif";
-import integrate from "../../../assets/images/sap/integrate.gif";
 
 export const S4Hana = () => {
   return (
@@ -30,16 +20,28 @@ export const S4Hana = () => {
                   the agility, scalability, and innovation needed to thrive in
                   the digital economy.
                 </p>
-                <img className="b1Logo-Sub mt-4" src={b1Logo} alt="sap-b1" />
+                <img
+                  className="b1Logo-Sub mt-4"
+                  src="/assets/images/home/sapS4.png"
+                  alt="sap-b1"
+                />
               </div>
             </div>
 
             <div className="d-flex d-lg-none w-100 justify-content-center">
-              <img className="sap-mobi-img" src={sapMobil} alt="" />
+              <img
+                className="sap-mobi-img"
+                src="/assets/images/sap/s4Mobi.webp"
+                alt=""
+              />
             </div>
 
             <div className="d-lg-flex justify-content-end align-items-end pt-lg-5 d-none ">
-              <img className="sap-com-img" src={sapCom} alt="" />
+              <img
+                className="sap-com-img"
+                src="/assets/images/sap/s4Back.webp"
+                alt=""
+              />
             </div>
           </div>
         </div>
@@ -50,7 +52,7 @@ export const S4Hana = () => {
           <div className="col-12 col-sm-6">
             <div className="Ind-Card">
               <div className="Ind-Img">
-                <img src={practise} alt="" />
+                <img src="/assets/images/sap/practise.gif" alt="" />
               </div>
 
               <h6 className="ind-head">Proven Best Practices</h6>
@@ -64,7 +66,7 @@ export const S4Hana = () => {
           <div className="col-12 col-sm-6">
             <div className="Ind-Card">
               <div className="Ind-Img">
-                <img src={fast} alt="" />
+                <img src="/assets/images/sap/fast.gif" alt="" />
               </div>
 
               <h6 className="ind-head">Fast Time to Value</h6>
@@ -78,7 +80,7 @@ export const S4Hana = () => {
           <div className="col-12 col-sm-6">
             <div className="Ind-Card">
               <div className="Ind-Img">
-                <img src={update} alt="" />
+                <img src="/assets/images/sap/update.gif" alt="" />
               </div>
 
               <h6 className="ind-head">Automatic and Continual Updates</h6>
@@ -92,7 +94,7 @@ export const S4Hana = () => {
           <div className="col-12 col-sm-6">
             <div className="Ind-Card">
               <div className="Ind-Img">
-                <img src={innovation} alt="" />
+                <img src="/assets/images/sap/innovation.gif" alt="" />
               </div>
 
               <h6 className="ind-head">Continuous Innovation</h6>
@@ -107,7 +109,7 @@ export const S4Hana = () => {
           <div className="col-12 col-sm-6">
             <div className="Ind-Card">
               <div className="Ind-Img">
-                <img src={security} alt="" />
+                <img src="/assets/images/sap/security.gif" alt="" />
               </div>
 
               <h6 className="ind-head mb-0">
@@ -124,7 +126,7 @@ export const S4Hana = () => {
           <div className="col-12 col-sm-6">
             <div className="Ind-Card">
               <div className="Ind-Img">
-                <img src={integrate} alt="" />
+                <img src="/assets/images/sap/integrate.gif" alt="" />
               </div>
 
               <h6 className="ind-head mb-0">Open and Extensible</h6>

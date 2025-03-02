@@ -1,5 +1,4 @@
 import "../../../../styles/pages/home/contents/Appointments.css";
-import booking from "../../../../assets/images/home/bookingX.gif";
 import { useNavigate } from "react-router-dom";
 
 import React, { useState, useEffect } from "react";
@@ -62,7 +61,7 @@ export const Appointments = () => {
           <h6 className="mt-4">Schedule Your Free Exploratory Call Today!</h6>
           <a href="/booking" className="ps-4">
             <p className="mb-0">Book Now</p>
-            <img src={booking} alt="" />
+            <img src="/assets/images/home/bookingX.gif" alt="" />
           </a>
         </div>
       </div>

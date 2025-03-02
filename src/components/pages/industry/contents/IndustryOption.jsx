@@ -1,8 +1,4 @@
 import "../../../../styles/pages/industry/contents/IndustryOption.css";
-import lifeGif from "../../../../assets/images/gif/lifeScience.gif";
-import manufacture from "../../../../assets/images/gif/manufacture.gif";
-import delivery from "../../../../assets/images/gif/delivery.gif";
-import pService from "../../../../assets/images/gif/service.gif";
 
 export const IndustryOption = () => {
   return (
@@ -18,7 +14,7 @@ export const IndustryOption = () => {
         <div className="col-12 col-sm-6">
           <div className="Ind-Card">
             <div className="Ind-Img">
-              <img src={manufacture} alt="" />
+              <img src="/assets/images/gif/manufacture.gif" alt="" />
             </div>
 
             <h6 className="ind-head">Manufacturing</h6>
@@ -37,7 +33,7 @@ export const IndustryOption = () => {
         <div className="col-12 col-sm-6">
           <div className="Ind-Card">
             <div className="Ind-Img">
-              <img src={delivery} alt="" />
+              <img src="/assets/images/gif/delivery.gif" alt="" />
             </div>
 
             <h6 className="ind-head">Trading & Distribution</h6>
@@ -56,7 +52,7 @@ export const IndustryOption = () => {
         <div className="col-12 col-sm-6">
           <div className="Ind-Card">
             <div className="Ind-Img">
-              <img src={pService} alt="" />
+              <img src="/assets/images/gif/service.gif" alt="" />
             </div>
 
             <h6 className="ind-head">Professional Services</h6>
@@ -73,7 +69,7 @@ export const IndustryOption = () => {
         <div className="col-12 col-sm-6">
           <div className="Ind-Card">
             <div className="Ind-Img">
-              <img src={lifeGif} alt="" />
+              <img src="/assets/images/gif/lifeScience.gif" alt="" />
             </div>
 
             <h6 className="ind-head">Life Sciences</h6>

@@ -1,7 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import "../../../../styles/pages/booking/contents/BookingOption.css";
 import Calendar from "react-calendar";
-import bookingSide from "../../../../assets/images/booking/bookingSide.png";
 import { Loader } from "../../../shared/Loader";
 import moment from "moment-timezone";
 import { Api } from "../../../../Api";
@@ -170,7 +169,7 @@ export const BookingOption = () => {
 
           <div className="col-lg-6  ps-md-4">
             <div className="side-img-book">
-              <img src={bookingSide} alt="" />
+              <img src="/assets/images/booking/bookingSide.png" alt="" />
             </div>
           </div>
         </div>

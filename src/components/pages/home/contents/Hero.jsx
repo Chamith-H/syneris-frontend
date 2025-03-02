@@ -1,7 +1,4 @@
 import "../../../../styles/pages/home/contents/Hero.css";
-import hero2Img from "../../../../assets/images/home/hero2Img.png";
-import hero2ImgSmall from "../../../../assets/images/home/hero2ImgSmall.png";
-
 import { useEffect, useRef } from "react";
 import { HeroSocial } from "./HeroSocial";
 
@@ -46,12 +43,12 @@ export const Hero = () => {
                 <div className="col-6 d-flex justify-content-end">
                   <img
                     className="Hero-Image d-none d-md-block"
-                    src={hero2Img}
+                    src="/assets/images/home/hero2Img.png"
                     alt=""
                   />
                   <img
                     className="Hero-Image d-md-none"
-                    src={hero2ImgSmall}
+                    src="/assets/images/home/hero2ImgSmall.png"
                     alt=""
                   />
                 </div>

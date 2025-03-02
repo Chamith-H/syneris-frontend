@@ -162,7 +162,7 @@
 
 .f-image-erp-1 {
   height: 175px;
-  background-image: url(../../assets/images/sap/sapBack.webp);
+  background-image: url(/assets/images/sap/sapBack.webp);
   background-size: cover;
   border-radius: 0px;
   border-style: solid;
@@ -172,7 +172,7 @@
 
 .f-image-erp-2 {
   height: 175px;
-  background-image: url(../../assets/images/sap/s4Back.webp);
+  background-image: url(/assets/images/sap/s4Back.webp);
   background-size: cover;
   border-radius: 0px;
   border-style: solid;

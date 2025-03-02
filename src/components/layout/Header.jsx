@@ -1,7 +1,5 @@
 import "../../styles/layout/Header.css";
-import Logo from "../../assets/images/logos/synerisLogo.jpg";
 import { useState, useEffect, useRef } from "react";
-import expandBack from "../../assets/images/heroMobile/back1.png";
 
 export const Header = () => {
   const [route, setRoute] = useState("");
@@ -31,7 +29,7 @@ export const Header = () => {
   return (
     <div className="Header px-4 px-md-5" ref={ref}>
       <div className="Header-Logo">
-        <img src={Logo} alt="syneris-logo" />
+        <img src="/assets/images/logos/synerisLogo.jpg" alt="syneris-logo" />
       </div>
 
       <div className="d-none d-lg-block">
@@ -200,7 +198,7 @@ export const Header = () => {
 
           <div className="col-6">
             <div className="expand-back">
-              <img src={expandBack} alt="" />
+              <img src="/assets/images/heroMobile/back1.png" alt="" />
             </div>
           </div>
         </div>

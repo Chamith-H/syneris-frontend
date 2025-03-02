@@ -1,8 +1,4 @@
 import "../../../../styles/pages/home/contents/Industries.css";
-import lifeGif from "../../../../assets/images/gif/lifeScience.gif";
-import manufacture from "../../../../assets/images/gif/manufacture.gif";
-import delivery from "../../../../assets/images/gif/delivery.gif";
-import pService from "../../../../assets/images/gif/service.gif";
 
 export const Industries = () => {
   return (
@@ -25,28 +21,44 @@ export const Industries = () => {
         <div className="row mt-4 gx-4 gy-4">
           <div className="col-12 col-md-6 col-lg-3">
             <div className="industry-card px-3 py-4">
-              <img src={manufacture} alt="gif" className="industryGif" />
+              <img
+                src="/assets/images/gif/manufacture.gif"
+                alt="gif"
+                className="industryGif"
+              />
               <p className="mt-3">Manufacturing</p>
             </div>
           </div>
 
           <div className="col-12 col-md-6 col-lg-3">
             <div className="industry-card px-3 py-4">
-              <img src={delivery} alt="gif" className="industryGif" />
+              <img
+                src="/assets/images/gif/delivery.gif"
+                alt="gif"
+                className="industryGif"
+              />
               <p className="mt-3">Trading & Distribution</p>
             </div>
           </div>
 
           <div className="col-12 col-md-6 col-lg-3">
             <div className="industry-card px-3 py-4">
-              <img src={pService} alt="gif" className="industryGif" />
+              <img
+                src="/assets/images/gif/service.gif"
+                alt="gif"
+                className="industryGif"
+              />
               <p className="mt-3">Professional Services</p>
             </div>
           </div>
 
           <div className="col-12 col-md-6 col-lg-3">
             <div className="industry-card px-3 py-4">
-              <img src={lifeGif} alt="gif" className="industryGif" />
+              <img
+                src="/assets/images/gif/lifeScience.gif"
+                alt="gif"
+                className="industryGif"
+              />
               <p className="mt-3">Life Sciences</p>
             </div>
           </div>

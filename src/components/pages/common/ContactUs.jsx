@@ -1,5 +1,4 @@
 import "../../../styles/pages/common/ContactUs.css";
-import whatsapp from "../../../assets/images/common/whats.png";
 import { useState } from "react";
 import { Api } from "../../../Api";
 import { Loader } from "../../shared/Loader";
@@ -100,7 +99,7 @@ export const ContactUs = () => {
               <div className="d-none d-lg-block col-12 col-lg-6">
                 <div className="contact-side-back-img-3 ">
                   <div className="align-c-back px-4 d-flex flex-column justify-content-center align-items-center pb-lg-4 h-100">
-                    <img src={whatsapp} alt="" />
+                    <img src="/assets/images/common/whats.png" alt="" />
                     <a href="">Message us on WhatsApp</a>
                   </div>
                 </div>
