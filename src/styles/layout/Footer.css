@@ -159,3 +159,45 @@
   font-size: 13px;
   color: rgba(255, 255, 255, 0.425);
 }
+
+.f-image-erp-1 {
+  height: 175px;
+  background-image: url(../../assets/images/sap/sapBack.webp);
+  background-size: cover;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(154, 219, 234);
+}
+
+.f-image-erp-2 {
+  height: 175px;
+  background-image: url(../../assets/images/sap/s4Back.webp);
+  background-size: cover;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(154, 219, 234);
+}
+
+.back-footer-align {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: end;
+}
+
+.footer-erp img {
+  width: 80px;
+}
+
+.footer-erp {
+  height: 50px;
+  width: 100%;
+  background-color: rgba(0, 37, 46, 0.868);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}

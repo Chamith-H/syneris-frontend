@@ -3,6 +3,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 import footerLogo from "../../assets/images/logos/synerisLogo.jpg";
 import { useState, useEffect } from "react";
+import b1Logo from "../../assets/images/home/sapB1.png";
+import s4Logo from "../../assets/images/home/sapS4.png";
 
 export const Footer = () => {
   const [route, setRoute] = useState("");
@@ -160,29 +162,27 @@ export const Footer = () => {
 
         <div className="col-12 col-sm-6 col-lg-3 px-4 px-md-5 ">
           <div className="d-flex flex-column py-4 f-3">
-            <h6>Share Your Experience</h6>
+            <h6>ERP Implementation</h6>
 
-            <div className="form-feedback">
-              <form action="">
-                <div className="d-flex flex-column">
-                  <label>Email</label>
-                  <input type="text" placeholder="Enter your email" />
+            <div className="row gx-2 gy-0 mt-1">
+              <div className="col-6">
+                <div className="f-image-erp-1">
+                  <div className="back-footer-align">
+                    <div className="footer-erp">
+                      <img src={b1Logo} alt="" />
+                    </div>
+                  </div>
                 </div>
-
-                <div className="d-flex flex-column mt-2">
-                  <label>Feedback</label>
-                  <textarea
-                    name=""
-                    id=""
-                    placeholder="Type your feedback"
-                  ></textarea>
+              </div>
+              <div className="col-6">
+                <div className="f-image-erp-2">
+                  <div className="back-footer-align">
+                    <div className="footer-erp">
+                      <img src={s4Logo} alt="" />
+                    </div>
+                  </div>
                 </div>
-                <div className="d-flex justify-content-end mt-2">
-                  <button type="submit" className="px-3">
-                    Send
-                  </button>
-                </div>
-              </form>
+              </div>
             </div>
           </div>
         </div>
