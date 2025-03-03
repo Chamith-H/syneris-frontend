@@ -151,9 +151,23 @@ export const Contact = () => {
                   <h6>Social Media</h6>
 
                   <div className="d-flex s-images">
-                    <img src="/assets/images/contact/facebook.png" alt="" />
-                    <img src="/assets/images/contact/linkedin.png" alt="" />
-                    <img src="/assets/images/contact/wtsap.png" alt="" />
+                    <a href="">
+                      <img src="/assets/images/contact/facebook.png" alt="" />
+                    </a>
+
+                    <a
+                      href="https://www.linkedin.com/company/105643401/admin/dashboard/"
+                      target="_blank"
+                    >
+                      <img src="/assets/images/contact/linkedin.png" alt="" />
+                    </a>
+
+                    <a
+                      href="https://api.whatsapp.com/send/?phone=%2B94772268415&text&app_absent=0"
+                      target="_blank"
+                    >
+                      <img src="/assets/images/contact/wtsap.png" alt="" />
+                    </a>
                   </div>
                 </div>
               </div>

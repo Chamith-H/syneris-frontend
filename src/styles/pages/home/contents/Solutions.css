@@ -36,8 +36,9 @@
 }
 
 .Solution-Card h6 {
-  font-family: "R2";
+  font-family: "R3";
   color: #000000;
+  font-size: 15px;
 }
 
 .Solution-Card p {
@@ -49,4 +50,11 @@
   width: 100%;
   border-top-right-radius: 4px;
   border-top-left-radius: 4px;
+}
+
+@media (max-width: 767px) {
+  .Solution-Card h6 {
+    font-family: "R2";
+    color: #000000;
+  }
 }
