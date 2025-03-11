@@ -113,7 +113,7 @@ export const BookingOption = () => {
             fontSize: "13px",
             color: "green",
           },
-          autoClose: 40000,
+          autoClose: 10000,
         });
       }
     } catch (err) {

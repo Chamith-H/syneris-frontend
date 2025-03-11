@@ -8,7 +8,7 @@ export const About = () => {
           <div className="py-4">
             <h5>ABOUT US</h5>
             <p className="mb-0">
-              Syneris Solutions is a leading IT consultant and technology
+              Syneris Solutions is a leading IT consultancy and technology
               solutions provider. We help businesses navigate strategic
               decisions, optimize processes, and enhance performance through
               innovative IT solutions, ERP implementation and support, and

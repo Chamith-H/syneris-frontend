@@ -22,7 +22,7 @@ export const Footer = () => {
 
             <div className="d-flex flex-column justify-content-between h-100 mt-2">
               <p className="des-foot">
-                Syneris Solutions is a leading IT consultant and technology
+                Syneris Solutions is a leading IT consultancy and technology
                 solutions provider.
               </p>
 
