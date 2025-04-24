@@ -18,7 +18,7 @@ export const BusinessOne = () => {
                   business to the next level
                 </p>
                 <img
-                  className="b1Logo-Sub mt-4"
+                  className="b1Logo-Sub-New mt-4"
                   src="/assets/images/home/sapB1.png"
                   alt="sap-b1"
                 />

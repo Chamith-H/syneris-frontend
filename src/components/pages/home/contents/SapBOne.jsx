@@ -31,7 +31,7 @@ export const SAPBOne = () => {
 
               <div className="d-flex align-items-center">
                 <img
-                  className="b1Img"
+                  className="b1Img-New"
                   src="/assets/images/home/sapB1.png"
                   alt="sapb1"
                 />
