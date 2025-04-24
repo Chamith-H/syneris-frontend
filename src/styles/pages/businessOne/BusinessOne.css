@@ -41,3 +41,12 @@
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
 }
+
+@media (max-width: 767px) {
+  .b1Logo-Sub-New {
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.542);
+    padding: 3px;
+    border-radius: 3px;
+  }
+}

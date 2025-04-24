@@ -169,7 +169,7 @@ export const Footer = () => {
               <div className="col-6">
                 <div className="f-image-erp-1">
                   <div className="back-footer-align">
-                    <div className="footer-erp">
+                    <div className="footer-erp-new">
                       <img src="/assets/images/home/sapB1.png" alt="" />
                     </div>
                   </div>
