@@ -125,11 +125,11 @@ export const Contact = () => {
                 <div className="address">
                   <h6>Visit Us</h6>
                   <p>
-                    736 Orion Tower,
+                    Level 12, Parkland Building,
                     <br />
-                    Dr. Danister De Silva Mawatha,
+                    No. 33, Park Street,
                     <br />
-                    Colombo 00900,
+                    Colombo 00200,
                     <br />
                     Sri Lanka
                   </p>

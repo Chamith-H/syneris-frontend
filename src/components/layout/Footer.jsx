@@ -64,11 +64,11 @@ export const Footer = () => {
               />
 
               <p className="ms-3">
-                736 Orion Tower,
+                Level 12, Parkland Building,
                 <br />
-                Dr. Danister De Silva Mawatha,
+                No. 33, Park Street,
                 <br />
-                Colombo 00900,
+                Colombo 00200,
                 <br />
                 Sri Lanka
               </p>
