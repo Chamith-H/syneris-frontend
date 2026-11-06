@@ -13,6 +13,7 @@
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
+    "@hcaptcha/react-hcaptcha": "^2.2.0",
     "axios": "^1.7.9",
     "bootstrap-icons": "^1.11.3",
     "install": "^0.13.0",

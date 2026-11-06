@@ -9,6 +9,7 @@ import { Loader } from "../../shared/Loader";
 import { ToastContainer, toast } from "react-toastify";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
+import { useFormSpamProtection } from "../../../hooks/useFormSpamProtection";
 
 export const Contact = () => {
   const [formData, setFormData] = useState({
@@ -23,6 +24,11 @@ export const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
 
   const [saving, setSaving] = useState(false);
+  const {
+    honeypotField,
+    isLikelyAutomated,
+    resetSpamProtection,
+  } = useFormSpamProtection();
 
   const lng = 79.8791;
   const lat = 6.94071;
@@ -37,6 +43,11 @@ export const Contact = () => {
 
   const submitFormData = async (event) => {
     event.preventDefault();
+
+    if (isLikelyAutomated()) {
+      toast.error("Unable to submit this request. Please try again.");
+      return;
+    }
 
     if (
       formData.name === "" ||
@@ -66,6 +77,7 @@ export const Contact = () => {
         });
 
         setSubmitted(false);
+        resetSpamProtection();
         setSaving(false);
 
         toast.success(response.data.message, {
@@ -208,6 +220,7 @@ export const Contact = () => {
 
       <div className="contact-m-form px-4 py-4 px-md-5 py-md-5">
         <form onSubmit={submitFormData} className="py-4">
+          {honeypotField}
           <p className="mb-0 info-tag">GET IN TOUCH</p>
           <h3 className="con-des">SEND US A MESSAGE TODAY</h3>
           <div className="divBorder"></div>
@@ -235,7 +248,7 @@ export const Contact = () => {
               <div className="input-sec mt-2">
                 <label>Email</label>
                 <input
-                  type="text"
+                  type="email"
                   placeholder="Enter your email"
                   value={formData.email}
                   required={true}

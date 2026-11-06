@@ -5,6 +5,7 @@ import { Loader } from "../../shared/Loader";
 import { ToastContainer, toast } from "react-toastify";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
+import { useFormSpamProtection } from "../../../hooks/useFormSpamProtection";
 
 export const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -19,9 +20,19 @@ export const ContactUs = () => {
   const [submitted, setSubmitted] = useState(false);
 
   const [saving, setSaving] = useState(false);
+  const {
+    honeypotField,
+    isLikelyAutomated,
+    resetSpamProtection,
+  } = useFormSpamProtection();
 
   const submitFormData = async (event) => {
     event.preventDefault();
+
+    if (isLikelyAutomated()) {
+      toast.error("Unable to submit this request. Please try again.");
+      return;
+    }
 
     if (
       formData.name === "" ||
@@ -51,6 +62,7 @@ export const ContactUs = () => {
         });
 
         setSubmitted(false);
+        resetSpamProtection();
         setSaving(false);
 
         toast.success(response.data.message, {
@@ -109,6 +121,7 @@ export const ContactUs = () => {
 
           <div className="col-sm-6">
             <form onSubmit={submitFormData} className="Form-Fields ps-md-5">
+              {honeypotField}
               <div className="d-flex flex-column">
                 <label>Name</label>
                 <input
@@ -132,7 +145,7 @@ export const ContactUs = () => {
                 <label>Email</label>
                 <input
                   className="field-input"
-                  type="text"
+                  type="email"
                   placeholder="Enter your email"
                   value={formData.email}
                   required={true}

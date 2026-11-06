@@ -7,6 +7,7 @@ import { Api } from "../../../../Api";
 import { ToastContainer, toast } from "react-toastify";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
+import { useFormSpamProtection } from "../../../../hooks/useFormSpamProtection";
 
 export const BookingOption = () => {
   const [formData, setFormData] = useState({
@@ -46,6 +47,11 @@ export const BookingOption = () => {
   const [submitted, setSubmitted] = useState(false);
 
   const [saving, setSaving] = useState(false);
+  const {
+    honeypotField,
+    isLikelyAutomated,
+    resetSpamProtection,
+  } = useFormSpamProtection();
 
   useEffect(() => {
     setTimeSlots(definedTimes);
@@ -57,6 +63,7 @@ export const BookingOption = () => {
     const modal = new window.bootstrap.Modal(modalRef.current);
     modal.show();
 
+    resetSpamProtection();
     setCurrentModal(modal);
 
     setSubmitted(false);
@@ -86,6 +93,11 @@ export const BookingOption = () => {
 
   const submitFormData = async (event) => {
     event.preventDefault();
+
+    if (isLikelyAutomated()) {
+      toast.error("Unable to submit this request. Please try again.");
+      return;
+    }
 
     if (
       formData.name === "" ||
@@ -193,6 +205,7 @@ export const BookingOption = () => {
             <div className="modal-body">
               <div className="form-book">
                 <form onSubmit={submitFormData}>
+                  {honeypotField}
                   <div className="form-input-book">
                     <label htmlFor="">Select a Time</label>
 
@@ -246,7 +259,7 @@ export const BookingOption = () => {
                   <div className="form-input-book mt-2">
                     <label htmlFor="">Email</label>
                     <input
-                      type="text"
+                      type="email"
                       placeholder="Enter your email"
                       value={formData.email}
                       required={true}
