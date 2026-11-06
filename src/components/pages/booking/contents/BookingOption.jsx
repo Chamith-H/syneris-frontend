@@ -48,6 +48,9 @@ export const BookingOption = () => {
 
   const [saving, setSaving] = useState(false);
   const {
+    captchaField,
+    captchaToken,
+    honeypot,
     honeypotField,
     isLikelyAutomated,
     resetSpamProtection,
@@ -95,7 +98,7 @@ export const BookingOption = () => {
     event.preventDefault();
 
     if (isLikelyAutomated()) {
-      toast.error("Unable to submit this request. Please try again.");
+      toast.error("Complete the human verification before submitting.");
       return;
     }
 
@@ -113,7 +116,11 @@ export const BookingOption = () => {
     const api = new Api();
 
     try {
-      const response = await api.appointment(formData);
+      const response = await api.appointment({
+        ...formData,
+        captchaToken,
+        website: honeypot,
+      });
 
       if (response) {
         hidePopup();
@@ -130,13 +137,18 @@ export const BookingOption = () => {
       }
     } catch (err) {
       setSaving(false);
-      toast.error(err.response.data.message, {
+      resetSpamProtection();
+      toast.error(
+        err.response?.data?.message ??
+          "Unable to submit this request. Please try again.",
+        {
         style: {
           fontFamily: "R4",
           fontSize: "13px",
           color: "red",
         },
-      });
+        },
+      );
     }
   };
 
@@ -343,6 +355,8 @@ export const BookingOption = () => {
                       }
                     ></textarea>
                   </div>
+
+                  {captchaField}
 
                   <div className="d-flex justify-content-end align-items-center button-book mt-2">
                     <button

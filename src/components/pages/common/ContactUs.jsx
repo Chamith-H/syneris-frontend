@@ -21,6 +21,9 @@ export const ContactUs = () => {
 
   const [saving, setSaving] = useState(false);
   const {
+    captchaField,
+    captchaToken,
+    honeypot,
     honeypotField,
     isLikelyAutomated,
     resetSpamProtection,
@@ -30,7 +33,7 @@ export const ContactUs = () => {
     event.preventDefault();
 
     if (isLikelyAutomated()) {
-      toast.error("Unable to submit this request. Please try again.");
+      toast.error("Complete the human verification before submitting.");
       return;
     }
 
@@ -47,7 +50,11 @@ export const ContactUs = () => {
     const api = new Api();
 
     try {
-      const response = await api.contact(formData);
+      const response = await api.contact({
+        ...formData,
+        captchaToken,
+        website: honeypot,
+      });
 
       if (response) {
         setSaving(false);
@@ -75,13 +82,18 @@ export const ContactUs = () => {
       }
     } catch (err) {
       setSaving(false);
-      toast.error(err.response.data.message, {
+      resetSpamProtection();
+      toast.error(
+        err.response?.data?.message ??
+          "Unable to submit this request. Please try again.",
+        {
         style: {
           fontFamily: "R4",
           fontSize: "13px",
           color: "red",
         },
-      });
+        },
+      );
     }
   };
 
@@ -229,6 +241,8 @@ export const ContactUs = () => {
                   }
                 ></textarea>
               </div>
+
+              {captchaField}
 
               <div className="d-flex justify-content-end mt-3">
                 <button
